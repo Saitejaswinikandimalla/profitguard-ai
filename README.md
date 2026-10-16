@@ -18,7 +18,7 @@ Modern e-commerce and retail pipelines frequently suffer from silent, compoundin
 
 ## 📊 High-Impact Competition Audit Metrics
 
-Across **18,000 real-world competition records**, ProfitGuard AI uncovered massive silent margin erosion:
+Across **18,000 synthetic competition records provided for Track 4**, ProfitGuard AI uncovered massive silent margin erosion:
 
 | Metric | Measured Value | Business Impact |
 | :--- | :--- | :--- |
@@ -76,7 +76,7 @@ flowchart LR
 
     subgraph ComputeTier["⚡ 2. Processing & Intelligence Tier"]
         CoreEngine["Deterministic Audit Engine<br/>(Python / Zero-Dependency)"]
-        KMeans["From-Scratch K-Means<br/>(Pure NumPy / Silhouette: 0.384)"]
+        KMeans["From-Scratch K-Means<br/>(Pure NumPy / Silhouette: 0.305)"]
         Export["Static Pre-Bake & JSON Exporter"]
     end
 
@@ -147,8 +147,8 @@ sequenceDiagram
 
     Ops->>App: Ingest transactions & customer logs
     App->>ML: Extract (Recency, Frequency, Monetary) vectors
-    ML->>ML: MinMax Scaling & Euclidean Centroid Iterations
-    ML-->>App: Assigned Cluster Labels (K=4, Silhouette: 0.384)
+    ML->>ML: Standardization & Euclidean Centroid Iterations
+    ML-->>App: Assigned Cluster Labels (K=4, Silhouette: 0.305)
     App->>Action: Map Clusters to Revenue Protection Playbooks
     Action-->>Ops: Direct Alert: Protect 84 At-Risk High-Spenders
 ```
@@ -171,6 +171,12 @@ sequenceDiagram
 | **Backend Engine** | Python 3 (Native HTTP Server) | Zero external dependencies, portable across any OS/cloud |
 | **Machine Learning** | Pure NumPy (`ml.py`) | Handcrafted K-Means algorithm demonstrating mathematical rigor |
 | **Cloud Hosting** | Vercel Edge & GitHub Pages | Serverless global distribution, automated continuous delivery |
+
+### 🔒 Model, API & External Services Disclosure (Datathon Rules Compliance)
+* **Third-Party AI / LLM APIs:** **None.** Zero reliance on OpenAI, Anthropic, Google, or external generative AI APIs.
+* **Pretrained Models:** **None.** All clustering algorithms (`ml.py`) are derived and trained from scratch using pure NumPy.
+* **External CDN Resources:** The browser interface loads `Chart.js` via the `cdn.jsdelivr.net` CDN strictly for visualization rendering. Internal data is queried via the local `/api/data` route or `./data.json`.
+* **Dataset Attribution (Rule 9):** Evaluated strictly on the **synthetic educational competition dataset** provided for Track 4 (`transactions.csv`, `products.csv`, `customers.csv`, `inventory.csv`, `campaigns.csv`). No external data was introduced.
 
 ---
 

@@ -148,7 +148,7 @@ def load_dataset():
         "status_counts": status_counts,
         "cat_revenue": {k: round(v, 2) for k, v in cat_revenue.items()},
         "cat_margin": {k: round(v, 2) for k, v in cat_margin.items()},
-        "recent_orders": transactions[:100],
+        "recent_orders": transactions[:1000],
         "worst_leaks": sorted([t for t in transactions if t["is_leakage"]], key=lambda x: x["total_margin"])[:20],
         "rfm_customers": rfm_list[:400]
     }
