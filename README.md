@@ -184,14 +184,14 @@ cd profitguard-ai
 
 ### 2. Run Instant Local Dashboard (Zero Setup)
 ```bash
-python server.py
+python backend/server.py
 ```
 Open **`http://localhost:8501`** in any web browser.
 
 ### 3. Run Streamlit Application (Alternative)
 ```bash
-python -m pip install -r requirements.txt
-streamlit run app.py
+python -m pip install -r backend/requirements.txt
+streamlit run backend/app.py
 ```
 
 ---
@@ -203,10 +203,11 @@ profitguard-ai/
 ├── index.html                  # Standalone client application for cloud hosting
 ├── data.json                   # Pre-baked audited dataset for edge CDN delivery
 ├── vercel.json                 # Vercel deployment and routing configuration
-├── server.py                   # Zero-dependency Python server with live API & web UI
-├── app.py                      # Interactive Streamlit analytics dashboard
-├── ml.py                       # Pure NumPy RFM feature extractor & K-Means engine
-├── requirements.txt            # Dependency list
+├── backend/                    # Core Python engine and ML algorithms
+│   ├── server.py               # Zero-dependency Python server with live API & web UI
+│   ├── app.py                  # Interactive Streamlit analytics dashboard
+│   ├── ml.py                   # Pure NumPy RFM feature extractor & K-Means engine
+│   └── requirements.txt        # Dependency list
 ├── data/                       # Datathon Track 4 CSV datasets
 │   ├── transactions.csv
 │   ├── products.csv

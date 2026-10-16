@@ -12,6 +12,8 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 
 PORT = 8501
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+if not os.path.exists(DATA_DIR):
+    DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
 
 def load_dataset():
