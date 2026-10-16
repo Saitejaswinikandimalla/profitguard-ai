@@ -121,8 +121,8 @@ def load_dataset():
                 "risk_score": risk_score
             })
 
-    # Sample RFM
-    ref_date = datetime(2025, 12, 31)
+    # Derive reference date dynamically from latest observed transaction
+    ref_date = max((max(o[0] for o in orders) for orders in cust_orders.values()), default=datetime.now())
     rfm_list = []
     for cid, orders in cust_orders.items():
         max_dt = max(o[0] for o in orders)

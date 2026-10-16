@@ -25,7 +25,7 @@ Across **18,000 real-world competition records**, ProfitGuard AI uncovered massi
 | **Completed Transacted Volume** | **₹73.02 Lakhs** | Total gross completed sales analyzed |
 | **Detected Cumulative Leakage** | **₹12.14 Lakhs** | **16.63% bottom-line loss** silently drained |
 | **Margin-Negative Orders** | **5,315 orders** | **38.07%** of completed transactions lost money |
-| **Catalog Price Inversions** | **4,770 SKUs** | Products cataloged with $Unit\_Price < Unit\_Cost$ |
+| **Base Price Inversions** | **4,770 orders** (76 unique SKUs) | Orders sold where base $Unit\_Price < Unit\_Cost$ |
 | **High-Risk Recoverable Value** | **₹4.85 Lakhs** | Immediate recovery via automated checkout barrier |
 | **Audited Customers (RFM)** | **400+ accounts** | Clustered by retention risk and lifetime value |
 

@@ -2,7 +2,7 @@
 ml.py - Machine Learning Module for ProfitGuard AI
 Implements from-scratch K-Means clustering using pure NumPy.
 Features:
-- Centroid initialization (k-means++ / random restart)
+- Centroid initialization (random restarts with multiple seeds)
 - Vectorized Euclidean distance assignment
 - Centroid update step
 - Convergence checking with tolerance
@@ -148,9 +148,11 @@ def compute_silhouette_score_sample(X, labels, sample_size=1000, random_state=42
         same_mask = (labels_sub == labels_sub[i])
         other_clusters = [k for k in unique_labels if k != labels_sub[i]]
 
-        # Intra-cluster distance a(i)
-        if np.sum(same_mask) > 1:
-            a_i = np.mean(np.linalg.norm(X_sub[same_mask] - X_sub[i], axis=1)[1:])
+        # Intra-cluster distance a(i): mean distance to distinct points in the same cluster
+        intra_mask = same_mask.copy()
+        intra_mask[i] = False
+        if np.any(intra_mask):
+            a_i = np.mean(np.linalg.norm(X_sub[intra_mask] - X_sub[i], axis=1))
         else:
             a_i = 0.0
 
