@@ -1,9 +1,9 @@
 # 🛡️ ProfitGuard AI
 ### *Intelligent Revenue Leakage Detection & Real-Time Decision-Support Platform*
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Active_Online-brightgreen?logo=googlechrome&logoColor=white)](https://saitejaswinikandimalla.github.io/profitguard-ai/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Datathon 2026](https://img.shields.io/badge/Datathon_2026-Track_4:_Business-orange)](https://github.com/Saitejaswinikandimalla/profitguard-ai)
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel&logoColor=white)](https://github.com/Saitejaswinikandimalla/profitguard-ai)
 [![Zero Dependency](https://img.shields.io/badge/Architecture-Zero--Dependency_Engine-emerald)](https://github.com/Saitejaswinikandimalla/profitguard-ai)
 
 ---
