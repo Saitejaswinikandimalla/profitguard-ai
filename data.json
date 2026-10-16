@@ -1,0 +1,4838 @@
+{
+  "total_tx": 18000,
+  "completed_tx": 13962,
+  "returned_tx": 1431,
+  "cancelled_tx": 1689,
+  "profitable_tx": 8647,
+  "leakage_tx": 5315,
+  "total_completed_rev": 7301698.25,
+  "total_leakage_loss": 1214115.5,
+  "status_counts": {
+    "Completed": 13962,
+    "Returned": 1431,
+    "Cancelled": 1689,
+    "Pending": 918
+  },
+  "cat_revenue": {
+    "Electronics": 1316100.72,
+    "Home": 1390889.32,
+    "Grocery": 1282925.56,
+    "Sports": 1301361.91,
+    "Fashion": 1076686.47,
+    "Beauty": 933734.26
+  },
+  "cat_margin": {
+    "Electronics": 412263.67,
+    "Home": 431659.48,
+    "Grocery": 300332.44,
+    "Sports": 378860.24,
+    "Fashion": 379136.86,
+    "Beauty": 66735.71
+  },
+  "recent_orders": [
+    {
+      "id": "TX000001",
+      "customer_id": "CU01588",
+      "product_id": "PR0103",
+      "category": "Electronics",
+      "date": "2025-08-22 12:30",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 307.7,
+      "discount_pct": 20.0,
+      "effective_price": 246.16,
+      "unit_cost": 63.55,
+      "unit_margin": 182.61,
+      "total_margin": 913.05,
+      "revenue": 1230.8,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000002",
+      "customer_id": "CU00382",
+      "product_id": "PR0101",
+      "category": "Home",
+      "date": "2025-06-06 04:03",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 346.98,
+      "discount_pct": 0.0,
+      "effective_price": 346.98,
+      "unit_cost": 15.38,
+      "unit_margin": 331.6,
+      "total_margin": 1326.4,
+      "revenue": 1387.92,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000003",
+      "customer_id": "CU01799",
+      "product_id": "PR0176",
+      "category": "Grocery",
+      "date": "2025-06-24 17:21",
+      "status": "Returned",
+      "quantity": 2,
+      "unit_price": 33.87,
+      "discount_pct": 10.0,
+      "effective_price": 30.48,
+      "unit_cost": 162.77,
+      "unit_margin": -132.29,
+      "total_margin": -264.57,
+      "revenue": 60.97,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000004",
+      "customer_id": "CU01643",
+      "product_id": "PR0116",
+      "category": "Grocery",
+      "date": "2025-05-16 13:57",
+      "status": "Pending",
+      "quantity": 2,
+      "unit_price": 166.19,
+      "discount_pct": 5.0,
+      "effective_price": 157.88,
+      "unit_cost": 124.9,
+      "unit_margin": 32.98,
+      "total_margin": 65.96,
+      "revenue": 315.76,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000005",
+      "customer_id": "CU01792",
+      "product_id": "PR0022",
+      "category": "Home",
+      "date": "2025-06-18 02:13",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 361.56,
+      "discount_pct": 5.0,
+      "effective_price": 343.48,
+      "unit_cost": 104.19,
+      "unit_margin": 239.29,
+      "total_margin": 1196.46,
+      "revenue": 1717.41,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000006",
+      "customer_id": "CU02380",
+      "product_id": "PR0148",
+      "category": "Electronics",
+      "date": "2025-01-10 22:42",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 147.69,
+      "discount_pct": 15.0,
+      "effective_price": 125.54,
+      "unit_cost": 47.79,
+      "unit_margin": 77.75,
+      "total_margin": 310.99,
+      "revenue": 502.15,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000007",
+      "customer_id": "CU01351",
+      "product_id": "PR0024",
+      "category": "Electronics",
+      "date": "2025-02-18 05:24",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 329.91,
+      "discount_pct": 10.0,
+      "effective_price": 296.92,
+      "unit_cost": 19.06,
+      "unit_margin": 277.86,
+      "total_margin": 1389.3,
+      "revenue": 1484.6,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000008",
+      "customer_id": "CU02962",
+      "product_id": "PR0115",
+      "category": "Home",
+      "date": "2025-04-22 06:33",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 245.77,
+      "discount_pct": 10.0,
+      "effective_price": 221.19,
+      "unit_cost": 214.37,
+      "unit_margin": 6.82,
+      "total_margin": 13.65,
+      "revenue": 442.39,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000009",
+      "customer_id": "CU01772",
+      "product_id": "PR0056",
+      "category": "Beauty",
+      "date": "2025-12-06 16:15",
+      "status": "Pending",
+      "quantity": 1,
+      "unit_price": 221.56,
+      "discount_pct": 15.0,
+      "effective_price": 188.33,
+      "unit_cost": 66.65,
+      "unit_margin": 121.68,
+      "total_margin": 121.68,
+      "revenue": 188.33,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000010",
+      "customer_id": "CU00994",
+      "product_id": "PR0095",
+      "category": "Electronics",
+      "date": "2025-04-27 13:31",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 18.66,
+      "discount_pct": 0.0,
+      "effective_price": 18.66,
+      "unit_cost": 143.39,
+      "unit_margin": -124.73,
+      "total_margin": -249.46,
+      "revenue": 37.32,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000011",
+      "customer_id": "CU02945",
+      "product_id": "PR0213",
+      "category": "Grocery",
+      "date": "2025-03-29 06:56",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 105.0,
+      "discount_pct": 15.0,
+      "effective_price": 89.25,
+      "unit_cost": 76.83,
+      "unit_margin": 12.42,
+      "total_margin": 12.42,
+      "revenue": 89.25,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000012",
+      "customer_id": "CU00742",
+      "product_id": "PR0072",
+      "category": "Sports",
+      "date": "2025-05-25 21:24",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 35.47,
+      "discount_pct": 0.0,
+      "effective_price": 35.47,
+      "unit_cost": 39.69,
+      "unit_margin": -4.22,
+      "total_margin": -21.1,
+      "revenue": 177.35,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000013",
+      "customer_id": "CU00063",
+      "product_id": "PR0108",
+      "category": "Electronics",
+      "date": "2025-02-26 10:37",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 318.89,
+      "discount_pct": 10.0,
+      "effective_price": 287.0,
+      "unit_cost": 87.02,
+      "unit_margin": 199.98,
+      "total_margin": 599.94,
+      "revenue": 861.0,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000014",
+      "customer_id": "CU00400",
+      "product_id": "PR0096",
+      "category": "Electronics",
+      "date": "2025-06-21 08:55",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 173.93,
+      "discount_pct": 0.0,
+      "effective_price": 173.93,
+      "unit_cost": 128.25,
+      "unit_margin": 45.68,
+      "total_margin": 182.72,
+      "revenue": 695.72,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000015",
+      "customer_id": "CU00587",
+      "product_id": "PR0136",
+      "category": "Electronics",
+      "date": "2025-09-18 07:56",
+      "status": "Returned",
+      "quantity": 1,
+      "unit_price": 281.24,
+      "discount_pct": 25.0,
+      "effective_price": 210.93,
+      "unit_cost": 95.96,
+      "unit_margin": 114.97,
+      "total_margin": 114.97,
+      "revenue": 210.93,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000016",
+      "customer_id": "CU02719",
+      "product_id": "PR0204",
+      "category": "Fashion",
+      "date": "2025-12-21 15:11",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 257.05,
+      "discount_pct": 5.0,
+      "effective_price": 244.2,
+      "unit_cost": 225.39,
+      "unit_margin": 18.81,
+      "total_margin": 37.62,
+      "revenue": 488.39,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000017",
+      "customer_id": "CU02480",
+      "product_id": "PR0246",
+      "category": "Fashion",
+      "date": "2025-02-24 12:30",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 10.76,
+      "discount_pct": 20.0,
+      "effective_price": 8.61,
+      "unit_cost": 27.79,
+      "unit_margin": -19.18,
+      "total_margin": -19.18,
+      "revenue": 8.61,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000018",
+      "customer_id": "CU01402",
+      "product_id": "PR0246",
+      "category": "Fashion",
+      "date": "2025-02-05 06:50",
+      "status": "Returned",
+      "quantity": 4,
+      "unit_price": 11.43,
+      "discount_pct": 15.0,
+      "effective_price": 9.72,
+      "unit_cost": 27.79,
+      "unit_margin": -18.07,
+      "total_margin": -72.3,
+      "revenue": 38.86,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000019",
+      "customer_id": "CU02130",
+      "product_id": "PR0135",
+      "category": "Grocery",
+      "date": "2025-08-06 17:10",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 290.99,
+      "discount_pct": 0.0,
+      "effective_price": 290.99,
+      "unit_cost": 180.57,
+      "unit_margin": 110.42,
+      "total_margin": 331.26,
+      "revenue": 872.97,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000020",
+      "customer_id": "CU02552",
+      "product_id": "PR0209",
+      "category": "Grocery",
+      "date": "2025-07-12 17:46",
+      "status": "Cancelled",
+      "quantity": 2,
+      "unit_price": 142.93,
+      "discount_pct": 0.0,
+      "effective_price": 142.93,
+      "unit_cost": 181.77,
+      "unit_margin": -38.84,
+      "total_margin": -77.68,
+      "revenue": 285.86,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000021",
+      "customer_id": "CU00807",
+      "product_id": "PR0080",
+      "category": "Home",
+      "date": "2025-09-06 16:39",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 47.2,
+      "discount_pct": 15.0,
+      "effective_price": 40.12,
+      "unit_cost": 231.12,
+      "unit_margin": -191.0,
+      "total_margin": -573.0,
+      "revenue": 120.36,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000022",
+      "customer_id": "CU01543",
+      "product_id": "PR0207",
+      "category": "Grocery",
+      "date": "2025-06-18 04:33",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 385.37,
+      "discount_pct": 0.0,
+      "effective_price": 385.37,
+      "unit_cost": 250.0,
+      "unit_margin": 135.37,
+      "total_margin": 676.85,
+      "revenue": 1926.85,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000023",
+      "customer_id": "CU00114",
+      "product_id": "PR0006",
+      "category": "Sports",
+      "date": "2025-03-20 14:55",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 149.89,
+      "discount_pct": 15.0,
+      "effective_price": 127.41,
+      "unit_cost": 125.69,
+      "unit_margin": 1.72,
+      "total_margin": 8.58,
+      "revenue": 637.03,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000024",
+      "customer_id": "CU01103",
+      "product_id": "PR0082",
+      "category": "Beauty",
+      "date": "2025-02-17 14:39",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 394.88,
+      "discount_pct": 0.0,
+      "effective_price": 394.88,
+      "unit_cost": 159.55,
+      "unit_margin": 235.33,
+      "total_margin": 235.33,
+      "revenue": 394.88,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000025",
+      "customer_id": "CU00616",
+      "product_id": "PR0089",
+      "category": "Electronics",
+      "date": "2025-12-17 04:53",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 272.63,
+      "discount_pct": 10.0,
+      "effective_price": 245.37,
+      "unit_cost": 222.09,
+      "unit_margin": 23.28,
+      "total_margin": 93.11,
+      "revenue": 981.47,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000026",
+      "customer_id": "CU01328",
+      "product_id": "PR0247",
+      "category": "Sports",
+      "date": "2025-08-10 05:08",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 355.48,
+      "discount_pct": 0.0,
+      "effective_price": 355.48,
+      "unit_cost": 243.07,
+      "unit_margin": 112.41,
+      "total_margin": 449.64,
+      "revenue": 1421.92,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000027",
+      "customer_id": "CU01508",
+      "product_id": "PR0195",
+      "category": "Fashion",
+      "date": "2025-09-20 02:53",
+      "status": "Cancelled",
+      "quantity": 5,
+      "unit_price": 338.04,
+      "discount_pct": 10.0,
+      "effective_price": 304.24,
+      "unit_cost": 64.26,
+      "unit_margin": 239.98,
+      "total_margin": 1199.88,
+      "revenue": 1521.18,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000028",
+      "customer_id": "CU00391",
+      "product_id": "PR0236",
+      "category": "Beauty",
+      "date": "2025-07-08 07:05",
+      "status": "Returned",
+      "quantity": 2,
+      "unit_price": 205.97,
+      "discount_pct": 0.0,
+      "effective_price": 205.97,
+      "unit_cost": 60.93,
+      "unit_margin": 145.04,
+      "total_margin": 290.08,
+      "revenue": 411.94,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000029",
+      "customer_id": "CU02907",
+      "product_id": "PR0114",
+      "category": "Electronics",
+      "date": "2025-02-22 05:16",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 164.95,
+      "discount_pct": 15.0,
+      "effective_price": 140.21,
+      "unit_cost": 27.45,
+      "unit_margin": 112.76,
+      "total_margin": 225.51,
+      "revenue": 280.41,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000030",
+      "customer_id": "CU00956",
+      "product_id": "PR0152",
+      "category": "Beauty",
+      "date": "2025-12-29 06:02",
+      "status": "Cancelled",
+      "quantity": 5,
+      "unit_price": 164.81,
+      "discount_pct": 10.0,
+      "effective_price": 148.33,
+      "unit_cost": 195.87,
+      "unit_margin": -47.54,
+      "total_margin": -237.7,
+      "revenue": 741.64,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000031",
+      "customer_id": "CU00574",
+      "product_id": "PR0009",
+      "category": "Electronics",
+      "date": "2025-02-15 12:42",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 317.5,
+      "discount_pct": 0.0,
+      "effective_price": 317.5,
+      "unit_cost": 92.24,
+      "unit_margin": 225.26,
+      "total_margin": 225.26,
+      "revenue": 317.5,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000032",
+      "customer_id": "CU00155",
+      "product_id": "PR0093",
+      "category": "Sports",
+      "date": "2025-12-14 07:02",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 116.0,
+      "discount_pct": 5.0,
+      "effective_price": 110.2,
+      "unit_cost": 49.15,
+      "unit_margin": 61.05,
+      "total_margin": 122.1,
+      "revenue": 220.4,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000033",
+      "customer_id": "CU02733",
+      "product_id": "PR0093",
+      "category": "Sports",
+      "date": "2025-11-25 02:47",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 109.9,
+      "discount_pct": 10.0,
+      "effective_price": 98.91,
+      "unit_cost": 49.15,
+      "unit_margin": 49.76,
+      "total_margin": 149.28,
+      "revenue": 296.73,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000034",
+      "customer_id": "CU00123",
+      "product_id": "PR0068",
+      "category": "Fashion",
+      "date": "2025-08-27 04:30",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 227.78,
+      "discount_pct": 15.0,
+      "effective_price": 193.61,
+      "unit_cost": 30.15,
+      "unit_margin": 163.46,
+      "total_margin": 490.39,
+      "revenue": 580.84,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000035",
+      "customer_id": "CU00060",
+      "product_id": "PR0085",
+      "category": "Beauty",
+      "date": "2025-12-04 05:15",
+      "status": "Returned",
+      "quantity": 3,
+      "unit_price": 198.86,
+      "discount_pct": 10.0,
+      "effective_price": 178.97,
+      "unit_cost": 126.84,
+      "unit_margin": 52.13,
+      "total_margin": 156.4,
+      "revenue": 536.92,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000036",
+      "customer_id": "CU00405",
+      "product_id": "PR0195",
+      "category": "Fashion",
+      "date": "2025-01-01 14:45",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 319.26,
+      "discount_pct": 15.0,
+      "effective_price": 271.37,
+      "unit_cost": 64.26,
+      "unit_margin": 207.11,
+      "total_margin": 621.33,
+      "revenue": 814.11,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000037",
+      "customer_id": "CU02537",
+      "product_id": "PR0059",
+      "category": "Fashion",
+      "date": "2025-02-16 15:19",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 294.79,
+      "discount_pct": 25.0,
+      "effective_price": 221.09,
+      "unit_cost": 79.75,
+      "unit_margin": 141.34,
+      "total_margin": 141.34,
+      "revenue": 221.09,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000038",
+      "customer_id": "CU00844",
+      "product_id": "PR0023",
+      "category": "Fashion",
+      "date": "2025-12-05 11:40",
+      "status": "Pending",
+      "quantity": 2,
+      "unit_price": 337.73,
+      "discount_pct": 15.0,
+      "effective_price": 287.07,
+      "unit_cost": 153.89,
+      "unit_margin": 133.18,
+      "total_margin": 266.36,
+      "revenue": 574.14,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000039",
+      "customer_id": "CU00627",
+      "product_id": "PR0144",
+      "category": "Sports",
+      "date": "2025-06-25 13:54",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 247.97,
+      "discount_pct": 10.0,
+      "effective_price": 223.17,
+      "unit_cost": 84.98,
+      "unit_margin": 138.19,
+      "total_margin": 690.96,
+      "revenue": 1115.87,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000040",
+      "customer_id": "CU02987",
+      "product_id": "PR0013",
+      "category": "Home",
+      "date": "2025-06-05 12:54",
+      "status": "Pending",
+      "quantity": 4,
+      "unit_price": 195.23,
+      "discount_pct": 5.0,
+      "effective_price": 185.47,
+      "unit_cost": 191.21,
+      "unit_margin": -5.74,
+      "total_margin": -22.97,
+      "revenue": 741.87,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000041",
+      "customer_id": "CU00961",
+      "product_id": "PR0090",
+      "category": "Sports",
+      "date": "2025-08-23 01:53",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 163.43,
+      "discount_pct": 0.0,
+      "effective_price": 163.43,
+      "unit_cost": 152.48,
+      "unit_margin": 10.95,
+      "total_margin": 32.85,
+      "revenue": 490.29,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000042",
+      "customer_id": "CU01355",
+      "product_id": "PR0215",
+      "category": "Grocery",
+      "date": "2025-04-16 01:45",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 227.67,
+      "discount_pct": 0.0,
+      "effective_price": 227.67,
+      "unit_cost": 145.09,
+      "unit_margin": 82.58,
+      "total_margin": 82.58,
+      "revenue": 227.67,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000043",
+      "customer_id": "CU02554",
+      "product_id": "PR0111",
+      "category": "Sports",
+      "date": "2025-09-21 12:26",
+      "status": "Returned",
+      "quantity": 1,
+      "unit_price": 161.71,
+      "discount_pct": 5.0,
+      "effective_price": 153.62,
+      "unit_cost": 60.64,
+      "unit_margin": 92.98,
+      "total_margin": 92.98,
+      "revenue": 153.62,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000044",
+      "customer_id": "CU01577",
+      "product_id": "PR0074",
+      "category": "Sports",
+      "date": "2025-02-21 06:33",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 261.97,
+      "discount_pct": 10.0,
+      "effective_price": 235.77,
+      "unit_cost": 134.71,
+      "unit_margin": 101.06,
+      "total_margin": 303.19,
+      "revenue": 707.32,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000045",
+      "customer_id": "CU02280",
+      "product_id": "PR0033",
+      "category": "Electronics",
+      "date": "2025-10-23 19:23",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 116.94,
+      "discount_pct": 5.0,
+      "effective_price": 111.09,
+      "unit_cost": 193.88,
+      "unit_margin": -82.79,
+      "total_margin": -413.94,
+      "revenue": 555.46,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000046",
+      "customer_id": "CU00821",
+      "product_id": "PR0121",
+      "category": "Home",
+      "date": "2025-05-18 20:28",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 78.64,
+      "discount_pct": 10.0,
+      "effective_price": 70.78,
+      "unit_cost": 143.05,
+      "unit_margin": -72.27,
+      "total_margin": -216.82,
+      "revenue": 212.33,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000047",
+      "customer_id": "CU02553",
+      "product_id": "PR0198",
+      "category": "Sports",
+      "date": "2025-01-11 12:20",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 320.96,
+      "discount_pct": 10.0,
+      "effective_price": 288.86,
+      "unit_cost": 144.24,
+      "unit_margin": 144.62,
+      "total_margin": 723.12,
+      "revenue": 1444.32,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000048",
+      "customer_id": "CU02231",
+      "product_id": "PR0064",
+      "category": "Electronics",
+      "date": "2025-04-23 06:46",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 90.73,
+      "discount_pct": 20.0,
+      "effective_price": 72.58,
+      "unit_cost": 129.87,
+      "unit_margin": -57.29,
+      "total_margin": -171.86,
+      "revenue": 217.75,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000049",
+      "customer_id": "CU01459",
+      "product_id": "PR0002",
+      "category": "Home",
+      "date": "2025-04-22 06:21",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 261.5,
+      "discount_pct": 0.0,
+      "effective_price": 261.5,
+      "unit_cost": 108.31,
+      "unit_margin": 153.19,
+      "total_margin": 153.19,
+      "revenue": 261.5,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000050",
+      "customer_id": "CU02788",
+      "product_id": "PR0032",
+      "category": "Home",
+      "date": "2025-07-23 02:22",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 22.91,
+      "discount_pct": 15.0,
+      "effective_price": 19.47,
+      "unit_cost": 94.16,
+      "unit_margin": -74.69,
+      "total_margin": -224.06,
+      "revenue": 58.42,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000051",
+      "customer_id": "CU01186",
+      "product_id": "PR0230",
+      "category": "Grocery",
+      "date": "2025-05-13 02:40",
+      "status": "Pending",
+      "quantity": 4,
+      "unit_price": 283.28,
+      "discount_pct": 0.0,
+      "effective_price": 283.28,
+      "unit_cost": 126.07,
+      "unit_margin": 157.21,
+      "total_margin": 628.84,
+      "revenue": 1133.12,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000052",
+      "customer_id": "CU01534",
+      "product_id": "PR0161",
+      "category": "Home",
+      "date": "2025-02-14 19:43",
+      "status": "Returned",
+      "quantity": 5,
+      "unit_price": 241.44,
+      "discount_pct": 0.0,
+      "effective_price": 241.44,
+      "unit_cost": 164.23,
+      "unit_margin": 77.21,
+      "total_margin": 386.05,
+      "revenue": 1207.2,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000053",
+      "customer_id": "CU01035",
+      "product_id": "PR0215",
+      "category": "Grocery",
+      "date": "2025-05-30 06:44",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 182.14,
+      "discount_pct": 20.0,
+      "effective_price": 145.71,
+      "unit_cost": 145.09,
+      "unit_margin": 0.62,
+      "total_margin": 1.24,
+      "revenue": 291.42,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000054",
+      "customer_id": "CU02481",
+      "product_id": "PR0186",
+      "category": "Fashion",
+      "date": "2025-03-14 15:03",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 77.64,
+      "discount_pct": 0.0,
+      "effective_price": 77.64,
+      "unit_cost": 71.19,
+      "unit_margin": 6.45,
+      "total_margin": 19.35,
+      "revenue": 232.92,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000055",
+      "customer_id": "CU01895",
+      "product_id": "PR0222",
+      "category": "Fashion",
+      "date": "2025-09-14 02:17",
+      "status": "Cancelled",
+      "quantity": 4,
+      "unit_price": 177.19,
+      "discount_pct": 0.0,
+      "effective_price": 177.19,
+      "unit_cost": 208.59,
+      "unit_margin": -31.4,
+      "total_margin": -125.6,
+      "revenue": 708.76,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000056",
+      "customer_id": "CU02891",
+      "product_id": "PR0120",
+      "category": "Grocery",
+      "date": "2025-02-02 22:32",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 342.18,
+      "discount_pct": 5.0,
+      "effective_price": 325.07,
+      "unit_cost": 116.14,
+      "unit_margin": 208.93,
+      "total_margin": 417.86,
+      "revenue": 650.14,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000057",
+      "customer_id": "CU01818",
+      "product_id": "PR0229",
+      "category": "Fashion",
+      "date": "2025-02-08 04:42",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 213.09,
+      "discount_pct": 10.0,
+      "effective_price": 191.78,
+      "unit_cost": 26.5,
+      "unit_margin": 165.28,
+      "total_margin": 495.84,
+      "revenue": 575.34,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000058",
+      "customer_id": "CU00478",
+      "product_id": "PR0052",
+      "category": "Grocery",
+      "date": "2025-01-22 07:45",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 84.73,
+      "discount_pct": 25.0,
+      "effective_price": 63.55,
+      "unit_cost": 155.43,
+      "unit_margin": -91.88,
+      "total_margin": -367.53,
+      "revenue": 254.19,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000059",
+      "customer_id": "CU01977",
+      "product_id": "PR0124",
+      "category": "Sports",
+      "date": "2025-02-05 14:12",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 223.18,
+      "discount_pct": 10.0,
+      "effective_price": 200.86,
+      "unit_cost": 223.58,
+      "unit_margin": -22.72,
+      "total_margin": -45.44,
+      "revenue": 401.72,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000060",
+      "customer_id": "CU02061",
+      "product_id": "PR0053",
+      "category": "Beauty",
+      "date": "2025-07-25 03:18",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 17.6,
+      "discount_pct": 0.0,
+      "effective_price": 17.6,
+      "unit_cost": 149.06,
+      "unit_margin": -131.46,
+      "total_margin": -525.84,
+      "revenue": 70.4,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000061",
+      "customer_id": "CU01974",
+      "product_id": "PR0046",
+      "category": "Electronics",
+      "date": "2025-06-16 01:57",
+      "status": "Pending",
+      "quantity": 2,
+      "unit_price": 284.88,
+      "discount_pct": 0.0,
+      "effective_price": 284.88,
+      "unit_cost": 48.66,
+      "unit_margin": 236.22,
+      "total_margin": 472.44,
+      "revenue": 569.76,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000062",
+      "customer_id": "CU00779",
+      "product_id": "PR0113",
+      "category": "Home",
+      "date": "2025-01-03 08:16",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 10.54,
+      "discount_pct": 25.0,
+      "effective_price": 7.9,
+      "unit_cost": 10.42,
+      "unit_margin": -2.52,
+      "total_margin": -10.06,
+      "revenue": 31.62,
+      "is_leakage": true,
+      "reason": "Excessive Promo",
+      "tag": "Promo Leak",
+      "risk_score": 80
+    },
+    {
+      "id": "TX000063",
+      "customer_id": "CU02888",
+      "product_id": "PR0209",
+      "category": "Grocery",
+      "date": "2025-11-13 18:03",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 107.2,
+      "discount_pct": 25.0,
+      "effective_price": 80.4,
+      "unit_cost": 181.77,
+      "unit_margin": -101.37,
+      "total_margin": -405.48,
+      "revenue": 321.6,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000064",
+      "customer_id": "CU02629",
+      "product_id": "PR0034",
+      "category": "Grocery",
+      "date": "2025-07-13 15:31",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 273.67,
+      "discount_pct": 0.0,
+      "effective_price": 273.67,
+      "unit_cost": 244.98,
+      "unit_margin": 28.69,
+      "total_margin": 143.45,
+      "revenue": 1368.35,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000065",
+      "customer_id": "CU02143",
+      "product_id": "PR0184",
+      "category": "Electronics",
+      "date": "2025-05-28 18:15",
+      "status": "Cancelled",
+      "quantity": 2,
+      "unit_price": 81.34,
+      "discount_pct": 25.0,
+      "effective_price": 61.01,
+      "unit_cost": 138.8,
+      "unit_margin": -77.8,
+      "total_margin": -155.59,
+      "revenue": 122.01,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000066",
+      "customer_id": "CU01696",
+      "product_id": "PR0089",
+      "category": "Electronics",
+      "date": "2025-07-17 08:32",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 272.63,
+      "discount_pct": 10.0,
+      "effective_price": 245.37,
+      "unit_cost": 222.09,
+      "unit_margin": 23.28,
+      "total_margin": 116.38,
+      "revenue": 1226.84,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000067",
+      "customer_id": "CU01682",
+      "product_id": "PR0228",
+      "category": "Beauty",
+      "date": "2025-11-20 14:32",
+      "status": "Returned",
+      "quantity": 4,
+      "unit_price": 135.48,
+      "discount_pct": 0.0,
+      "effective_price": 135.48,
+      "unit_cost": 167.1,
+      "unit_margin": -31.62,
+      "total_margin": -126.48,
+      "revenue": 541.92,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000068",
+      "customer_id": "CU01417",
+      "product_id": "PR0193",
+      "category": "Grocery",
+      "date": "2025-01-28 04:39",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 384.65,
+      "discount_pct": 0.0,
+      "effective_price": 384.65,
+      "unit_cost": 199.05,
+      "unit_margin": 185.6,
+      "total_margin": 185.6,
+      "revenue": 384.65,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000069",
+      "customer_id": "CU01417",
+      "product_id": "PR0137",
+      "category": "Home",
+      "date": "2025-06-09 08:20",
+      "status": "Cancelled",
+      "quantity": 5,
+      "unit_price": 275.44,
+      "discount_pct": 0.0,
+      "effective_price": 275.44,
+      "unit_cost": 210.92,
+      "unit_margin": 64.52,
+      "total_margin": 322.6,
+      "revenue": 1377.2,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000070",
+      "customer_id": "CU02037",
+      "product_id": "PR0039",
+      "category": "Grocery",
+      "date": "2025-06-08 21:52",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 264.67,
+      "discount_pct": 10.0,
+      "effective_price": 238.2,
+      "unit_cost": 37.16,
+      "unit_margin": 201.04,
+      "total_margin": 603.13,
+      "revenue": 714.61,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000071",
+      "customer_id": "CU01441",
+      "product_id": "PR0225",
+      "category": "Electronics",
+      "date": "2025-08-01 03:37",
+      "status": "Returned",
+      "quantity": 4,
+      "unit_price": 195.89,
+      "discount_pct": 15.0,
+      "effective_price": 166.51,
+      "unit_cost": 10.91,
+      "unit_margin": 155.6,
+      "total_margin": 622.39,
+      "revenue": 666.03,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000072",
+      "customer_id": "CU00411",
+      "product_id": "PR0209",
+      "category": "Grocery",
+      "date": "2025-07-27 22:50",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 142.93,
+      "discount_pct": 0.0,
+      "effective_price": 142.93,
+      "unit_cost": 181.77,
+      "unit_margin": -38.84,
+      "total_margin": -116.52,
+      "revenue": 428.79,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000073",
+      "customer_id": "CU00662",
+      "product_id": "PR0205",
+      "category": "Sports",
+      "date": "2025-11-05 01:07",
+      "status": "Returned",
+      "quantity": 1,
+      "unit_price": 202.86,
+      "discount_pct": 10.0,
+      "effective_price": 182.57,
+      "unit_cost": 50.04,
+      "unit_margin": 132.53,
+      "total_margin": 132.53,
+      "revenue": 182.57,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000074",
+      "customer_id": "CU01060",
+      "product_id": "PR0222",
+      "category": "Fashion",
+      "date": "2025-06-16 22:59",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 132.89,
+      "discount_pct": 25.0,
+      "effective_price": 99.67,
+      "unit_cost": 208.59,
+      "unit_margin": -108.92,
+      "total_margin": -544.61,
+      "revenue": 498.34,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000075",
+      "customer_id": "CU02518",
+      "product_id": "PR0179",
+      "category": "Electronics",
+      "date": "2025-06-24 20:09",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 368.48,
+      "discount_pct": 0.0,
+      "effective_price": 368.48,
+      "unit_cost": 141.45,
+      "unit_margin": 227.03,
+      "total_margin": 908.12,
+      "revenue": 1473.92,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000076",
+      "customer_id": "CU01945",
+      "product_id": "PR0124",
+      "category": "Sports",
+      "date": "2025-04-13 10:17",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 210.78,
+      "discount_pct": 15.0,
+      "effective_price": 179.16,
+      "unit_cost": 223.58,
+      "unit_margin": -44.42,
+      "total_margin": -44.42,
+      "revenue": 179.16,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000077",
+      "customer_id": "CU02516",
+      "product_id": "PR0109",
+      "category": "Grocery",
+      "date": "2025-07-22 12:06",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 109.16,
+      "discount_pct": 5.0,
+      "effective_price": 103.7,
+      "unit_cost": 57.71,
+      "unit_margin": 45.99,
+      "total_margin": 137.98,
+      "revenue": 311.11,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000078",
+      "customer_id": "CU02390",
+      "product_id": "PR0006",
+      "category": "Sports",
+      "date": "2025-10-27 23:25",
+      "status": "Pending",
+      "quantity": 5,
+      "unit_price": 158.71,
+      "discount_pct": 10.0,
+      "effective_price": 142.84,
+      "unit_cost": 125.69,
+      "unit_margin": 17.15,
+      "total_margin": 85.75,
+      "revenue": 714.19,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000079",
+      "customer_id": "CU02628",
+      "product_id": "PR0003",
+      "category": "Sports",
+      "date": "2025-07-25 16:33",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 149.3,
+      "discount_pct": 20.0,
+      "effective_price": 119.44,
+      "unit_cost": 223.15,
+      "unit_margin": -103.71,
+      "total_margin": -207.42,
+      "revenue": 238.88,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000080",
+      "customer_id": "CU01553",
+      "product_id": "PR0176",
+      "category": "Grocery",
+      "date": "2025-05-03 11:20",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 37.63,
+      "discount_pct": 0.0,
+      "effective_price": 37.63,
+      "unit_cost": 162.77,
+      "unit_margin": -125.14,
+      "total_margin": -250.28,
+      "revenue": 75.26,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000081",
+      "customer_id": "CU00614",
+      "product_id": "PR0184",
+      "category": "Electronics",
+      "date": "2025-12-03 11:19",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 108.46,
+      "discount_pct": 0.0,
+      "effective_price": 108.46,
+      "unit_cost": 138.8,
+      "unit_margin": -30.34,
+      "total_margin": -91.02,
+      "revenue": 325.38,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000082",
+      "customer_id": "CU02024",
+      "product_id": "PR0210",
+      "category": "Sports",
+      "date": "2025-03-25 05:54",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 9.08,
+      "discount_pct": 0.0,
+      "effective_price": 9.08,
+      "unit_cost": 169.9,
+      "unit_margin": -160.82,
+      "total_margin": -321.64,
+      "revenue": 18.16,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000083",
+      "customer_id": "CU02700",
+      "product_id": "PR0126",
+      "category": "Electronics",
+      "date": "2025-11-30 14:17",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 251.75,
+      "discount_pct": 0.0,
+      "effective_price": 251.75,
+      "unit_cost": 199.89,
+      "unit_margin": 51.86,
+      "total_margin": 103.72,
+      "revenue": 503.5,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000084",
+      "customer_id": "CU00280",
+      "product_id": "PR0054",
+      "category": "Fashion",
+      "date": "2025-05-12 11:22",
+      "status": "Pending",
+      "quantity": 5,
+      "unit_price": 142.55,
+      "discount_pct": 15.0,
+      "effective_price": 121.17,
+      "unit_cost": 118.7,
+      "unit_margin": 2.47,
+      "total_margin": 12.34,
+      "revenue": 605.84,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000085",
+      "customer_id": "CU01824",
+      "product_id": "PR0089",
+      "category": "Electronics",
+      "date": "2025-06-29 17:18",
+      "status": "Cancelled",
+      "quantity": 1,
+      "unit_price": 302.92,
+      "discount_pct": 0.0,
+      "effective_price": 302.92,
+      "unit_cost": 222.09,
+      "unit_margin": 80.83,
+      "total_margin": 80.83,
+      "revenue": 302.92,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000086",
+      "customer_id": "CU01413",
+      "product_id": "PR0087",
+      "category": "Electronics",
+      "date": "2025-09-20 10:43",
+      "status": "Returned",
+      "quantity": 1,
+      "unit_price": 14.46,
+      "discount_pct": 0.0,
+      "effective_price": 14.46,
+      "unit_cost": 93.43,
+      "unit_margin": -78.97,
+      "total_margin": -78.97,
+      "revenue": 14.46,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000087",
+      "customer_id": "CU01781",
+      "product_id": "PR0126",
+      "category": "Electronics",
+      "date": "2025-01-08 18:37",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 213.99,
+      "discount_pct": 15.0,
+      "effective_price": 181.89,
+      "unit_cost": 199.89,
+      "unit_margin": -18.0,
+      "total_margin": -36.0,
+      "revenue": 363.78,
+      "is_leakage": true,
+      "reason": "Excessive Promo",
+      "tag": "Promo Leak",
+      "risk_score": 80
+    },
+    {
+      "id": "TX000088",
+      "customer_id": "CU00017",
+      "product_id": "PR0056",
+      "category": "Beauty",
+      "date": "2025-12-10 08:21",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 195.5,
+      "discount_pct": 25.0,
+      "effective_price": 146.62,
+      "unit_cost": 66.65,
+      "unit_margin": 79.97,
+      "total_margin": 399.88,
+      "revenue": 733.12,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000089",
+      "customer_id": "CU02220",
+      "product_id": "PR0163",
+      "category": "Electronics",
+      "date": "2025-11-07 19:20",
+      "status": "Returned",
+      "quantity": 2,
+      "unit_price": 67.51,
+      "discount_pct": 5.0,
+      "effective_price": 64.13,
+      "unit_cost": 238.49,
+      "unit_margin": -174.36,
+      "total_margin": -348.71,
+      "revenue": 128.27,
+      "is_leakage": false,
+      "reason": "Customer Return",
+      "tag": "Return",
+      "risk_score": 65
+    },
+    {
+      "id": "TX000090",
+      "customer_id": "CU00720",
+      "product_id": "PR0098",
+      "category": "Home",
+      "date": "2025-01-29 12:44",
+      "status": "Completed",
+      "quantity": 2,
+      "unit_price": 108.91,
+      "discount_pct": 0.0,
+      "effective_price": 108.91,
+      "unit_cost": 86.48,
+      "unit_margin": 22.43,
+      "total_margin": 44.86,
+      "revenue": 217.82,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000091",
+      "customer_id": "CU02829",
+      "product_id": "PR0219",
+      "category": "Sports",
+      "date": "2025-02-16 13:58",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 291.57,
+      "discount_pct": 0.0,
+      "effective_price": 291.57,
+      "unit_cost": 112.12,
+      "unit_margin": 179.45,
+      "total_margin": 538.35,
+      "revenue": 874.71,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000092",
+      "customer_id": "CU00715",
+      "product_id": "PR0123",
+      "category": "Grocery",
+      "date": "2025-02-04 18:55",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 267.59,
+      "discount_pct": 0.0,
+      "effective_price": 267.59,
+      "unit_cost": 45.69,
+      "unit_margin": 221.9,
+      "total_margin": 1109.5,
+      "revenue": 1337.95,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000093",
+      "customer_id": "CU00345",
+      "product_id": "PR0187",
+      "category": "Home",
+      "date": "2025-11-10 01:10",
+      "status": "Cancelled",
+      "quantity": 2,
+      "unit_price": 241.51,
+      "discount_pct": 10.0,
+      "effective_price": 217.36,
+      "unit_cost": 79.23,
+      "unit_margin": 138.13,
+      "total_margin": 276.26,
+      "revenue": 434.72,
+      "is_leakage": false,
+      "reason": "Order Cancelled",
+      "tag": "Cancelled",
+      "risk_score": 50
+    },
+    {
+      "id": "TX000094",
+      "customer_id": "CU00501",
+      "product_id": "PR0138",
+      "category": "Electronics",
+      "date": "2025-02-27 08:08",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 259.82,
+      "discount_pct": 0.0,
+      "effective_price": 259.82,
+      "unit_cost": 194.23,
+      "unit_margin": 65.59,
+      "total_margin": 262.36,
+      "revenue": 1039.28,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000095",
+      "customer_id": "CU01457",
+      "product_id": "PR0081",
+      "category": "Sports",
+      "date": "2025-09-11 05:41",
+      "status": "Completed",
+      "quantity": 3,
+      "unit_price": 119.78,
+      "discount_pct": 10.0,
+      "effective_price": 107.8,
+      "unit_cost": 122.9,
+      "unit_margin": -15.1,
+      "total_margin": -45.29,
+      "revenue": 323.41,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX000096",
+      "customer_id": "CU01165",
+      "product_id": "PR0220",
+      "category": "Home",
+      "date": "2025-09-22 21:02",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 376.55,
+      "discount_pct": 0.0,
+      "effective_price": 376.55,
+      "unit_cost": 248.43,
+      "unit_margin": 128.12,
+      "total_margin": 128.12,
+      "revenue": 376.55,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000097",
+      "customer_id": "CU02799",
+      "product_id": "PR0041",
+      "category": "Fashion",
+      "date": "2025-01-03 06:08",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 156.2,
+      "discount_pct": 10.0,
+      "effective_price": 140.58,
+      "unit_cost": 73.65,
+      "unit_margin": 66.93,
+      "total_margin": 334.65,
+      "revenue": 702.9,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000098",
+      "customer_id": "CU01981",
+      "product_id": "PR0126",
+      "category": "Electronics",
+      "date": "2025-12-21 10:08",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 251.75,
+      "discount_pct": 0.0,
+      "effective_price": 251.75,
+      "unit_cost": 199.89,
+      "unit_margin": 51.86,
+      "total_margin": 51.86,
+      "revenue": 251.75,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000099",
+      "customer_id": "CU02372",
+      "product_id": "PR0051",
+      "category": "Fashion",
+      "date": "2025-01-22 00:29",
+      "status": "Completed",
+      "quantity": 1,
+      "unit_price": 205.22,
+      "discount_pct": 0.0,
+      "effective_price": 205.22,
+      "unit_cost": 74.21,
+      "unit_margin": 131.01,
+      "total_margin": 131.01,
+      "revenue": 205.22,
+      "is_leakage": false,
+      "reason": "Profitable Sale",
+      "tag": "Healthy",
+      "risk_score": 15
+    },
+    {
+      "id": "TX000100",
+      "customer_id": "CU01721",
+      "product_id": "PR0192",
+      "category": "Grocery",
+      "date": "2025-11-18 06:43",
+      "status": "Completed",
+      "quantity": 4,
+      "unit_price": 31.41,
+      "discount_pct": 0.0,
+      "effective_price": 31.41,
+      "unit_cost": 165.76,
+      "unit_margin": -134.35,
+      "total_margin": -537.4,
+      "revenue": 125.64,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    }
+  ],
+  "worst_leaks": [
+    {
+      "id": "TX015158",
+      "customer_id": "CU00939",
+      "product_id": "PR0163",
+      "category": "Electronics",
+      "date": "2025-07-21 18:08",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 53.3,
+      "discount_pct": 25.0,
+      "effective_price": 39.97,
+      "unit_cost": 238.49,
+      "unit_margin": -198.52,
+      "total_margin": -992.58,
+      "revenue": 199.87,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX012734",
+      "customer_id": "CU01046",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-06-25 16:24",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 22.89,
+      "discount_pct": 10.0,
+      "effective_price": 20.6,
+      "unit_cost": 218.49,
+      "unit_margin": -197.89,
+      "total_margin": -989.45,
+      "revenue": 103.01,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX005702",
+      "customer_id": "CU02351",
+      "product_id": "PR0021",
+      "category": "Beauty",
+      "date": "2025-07-28 13:39",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 51.58,
+      "discount_pct": 20.0,
+      "effective_price": 41.26,
+      "unit_cost": 236.46,
+      "unit_margin": -195.2,
+      "total_margin": -975.98,
+      "revenue": 206.32,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX016475",
+      "customer_id": "CU00475",
+      "product_id": "PR0021",
+      "category": "Beauty",
+      "date": "2025-11-28 02:24",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 51.58,
+      "discount_pct": 20.0,
+      "effective_price": 41.26,
+      "unit_cost": 236.46,
+      "unit_margin": -195.2,
+      "total_margin": -975.98,
+      "revenue": 206.32,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX017572",
+      "customer_id": "CU02507",
+      "product_id": "PR0021",
+      "category": "Beauty",
+      "date": "2025-01-07 14:15",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 51.58,
+      "discount_pct": 20.0,
+      "effective_price": 41.26,
+      "unit_cost": 236.46,
+      "unit_margin": -195.2,
+      "total_margin": -975.98,
+      "revenue": 206.32,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX001274",
+      "customer_id": "CU00592",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-02-16 06:22",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX001775",
+      "customer_id": "CU01674",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-09-27 04:03",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX002483",
+      "customer_id": "CU01618",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-07-15 19:11",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX003618",
+      "customer_id": "CU00012",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-07-31 21:28",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX004061",
+      "customer_id": "CU02489",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-02-18 08:09",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX004454",
+      "customer_id": "CU01752",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-07-09 08:29",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX010642",
+      "customer_id": "CU00116",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-06-01 02:21",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX013368",
+      "customer_id": "CU02087",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-02-05 15:31",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX014333",
+      "customer_id": "CU00451",
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "date": "2025-02-19 21:17",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 25.43,
+      "discount_pct": 0.0,
+      "effective_price": 25.43,
+      "unit_cost": 218.49,
+      "unit_margin": -193.06,
+      "total_margin": -965.3,
+      "revenue": 127.15,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX012498",
+      "customer_id": "CU02850",
+      "product_id": "PR0163",
+      "category": "Electronics",
+      "date": "2025-09-14 14:47",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 56.85,
+      "discount_pct": 20.0,
+      "effective_price": 45.48,
+      "unit_cost": 238.49,
+      "unit_margin": -193.01,
+      "total_margin": -965.05,
+      "revenue": 227.4,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX007050",
+      "customer_id": "CU01889",
+      "product_id": "PR0080",
+      "category": "Home",
+      "date": "2025-11-01 04:12",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 47.2,
+      "discount_pct": 15.0,
+      "effective_price": 40.12,
+      "unit_cost": 231.12,
+      "unit_margin": -191.0,
+      "total_margin": -955.0,
+      "revenue": 200.6,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX001395",
+      "customer_id": "CU02256",
+      "product_id": "PR0021",
+      "category": "Beauty",
+      "date": "2025-04-29 00:25",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 54.81,
+      "discount_pct": 15.0,
+      "effective_price": 46.59,
+      "unit_cost": 236.46,
+      "unit_margin": -189.87,
+      "total_margin": -949.36,
+      "revenue": 232.94,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX012506",
+      "customer_id": "CU01586",
+      "product_id": "PR0021",
+      "category": "Beauty",
+      "date": "2025-02-03 01:20",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 54.81,
+      "discount_pct": 15.0,
+      "effective_price": 46.59,
+      "unit_cost": 236.46,
+      "unit_margin": -189.87,
+      "total_margin": -949.36,
+      "revenue": 232.94,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX015869",
+      "customer_id": "CU01164",
+      "product_id": "PR0028",
+      "category": "Grocery",
+      "date": "2025-09-10 08:49",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 9.14,
+      "discount_pct": 20.0,
+      "effective_price": 7.31,
+      "unit_cost": 195.92,
+      "unit_margin": -188.61,
+      "total_margin": -943.04,
+      "revenue": 36.56,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    },
+    {
+      "id": "TX006979",
+      "customer_id": "CU02155",
+      "product_id": "PR0028",
+      "category": "Grocery",
+      "date": "2025-06-08 20:33",
+      "status": "Completed",
+      "quantity": 5,
+      "unit_price": 9.71,
+      "discount_pct": 15.0,
+      "effective_price": 8.25,
+      "unit_cost": 195.92,
+      "unit_margin": -187.67,
+      "total_margin": -938.33,
+      "revenue": 41.27,
+      "is_leakage": true,
+      "reason": "Catalog Mispricing",
+      "tag": "Catalog Error",
+      "risk_score": 95
+    }
+  ],
+  "rfm_customers": [
+    {
+      "customer_id": "CU01588",
+      "recency": 25,
+      "frequency": 4,
+      "monetary": 2015.75
+    },
+    {
+      "customer_id": "CU00382",
+      "recency": 30,
+      "frequency": 8,
+      "monetary": 3949.83
+    },
+    {
+      "customer_id": "CU01792",
+      "recency": 102,
+      "frequency": 6,
+      "monetary": 5761.88
+    },
+    {
+      "customer_id": "CU02380",
+      "recency": 133,
+      "frequency": 3,
+      "monetary": 1128.26
+    },
+    {
+      "customer_id": "CU01351",
+      "recency": 112,
+      "frequency": 5,
+      "monetary": 5433.45
+    },
+    {
+      "customer_id": "CU02962",
+      "recency": 127,
+      "frequency": 2,
+      "monetary": 617.08
+    },
+    {
+      "customer_id": "CU00994",
+      "recency": 54,
+      "frequency": 6,
+      "monetary": 2639.87
+    },
+    {
+      "customer_id": "CU02945",
+      "recency": 7,
+      "frequency": 6,
+      "monetary": 2346.87
+    },
+    {
+      "customer_id": "CU00742",
+      "recency": 219,
+      "frequency": 2,
+      "monetary": 366.29
+    },
+    {
+      "customer_id": "CU00063",
+      "recency": 14,
+      "frequency": 7,
+      "monetary": 6315.52
+    },
+    {
+      "customer_id": "CU00400",
+      "recency": 136,
+      "frequency": 2,
+      "monetary": 1531.56
+    },
+    {
+      "customer_id": "CU02719",
+      "recency": 9,
+      "frequency": 10,
+      "monetary": 7885.15
+    },
+    {
+      "customer_id": "CU02480",
+      "recency": 26,
+      "frequency": 5,
+      "monetary": 2979.62
+    },
+    {
+      "customer_id": "CU02130",
+      "recency": 72,
+      "frequency": 6,
+      "monetary": 2557.68
+    },
+    {
+      "customer_id": "CU00807",
+      "recency": 115,
+      "frequency": 3,
+      "monetary": 1651.83
+    },
+    {
+      "customer_id": "CU01543",
+      "recency": 67,
+      "frequency": 7,
+      "monetary": 5626.88
+    },
+    {
+      "customer_id": "CU00114",
+      "recency": 97,
+      "frequency": 5,
+      "monetary": 2201.98
+    },
+    {
+      "customer_id": "CU01103",
+      "recency": 35,
+      "frequency": 8,
+      "monetary": 2927.0
+    },
+    {
+      "customer_id": "CU00616",
+      "recency": 13,
+      "frequency": 11,
+      "monetary": 6775.95
+    },
+    {
+      "customer_id": "CU01328",
+      "recency": 75,
+      "frequency": 6,
+      "monetary": 5258.78
+    },
+    {
+      "customer_id": "CU02907",
+      "recency": 83,
+      "frequency": 5,
+      "monetary": 2245.77
+    },
+    {
+      "customer_id": "CU00574",
+      "recency": 58,
+      "frequency": 10,
+      "monetary": 3446.24
+    },
+    {
+      "customer_id": "CU00155",
+      "recency": 16,
+      "frequency": 6,
+      "monetary": 2295.1
+    },
+    {
+      "customer_id": "CU02733",
+      "recency": 15,
+      "frequency": 4,
+      "monetary": 1222.31
+    },
+    {
+      "customer_id": "CU00123",
+      "recency": -1,
+      "frequency": 7,
+      "monetary": 2841.85
+    },
+    {
+      "customer_id": "CU00405",
+      "recency": 18,
+      "frequency": 9,
+      "monetary": 4635.61
+    },
+    {
+      "customer_id": "CU02537",
+      "recency": 265,
+      "frequency": 2,
+      "monetary": 385.88
+    },
+    {
+      "customer_id": "CU00627",
+      "recency": 127,
+      "frequency": 7,
+      "monetary": 3137.14
+    },
+    {
+      "customer_id": "CU00961",
+      "recency": 26,
+      "frequency": 6,
+      "monetary": 2737.42
+    },
+    {
+      "customer_id": "CU01355",
+      "recency": 69,
+      "frequency": 9,
+      "monetary": 3255.87
+    },
+    {
+      "customer_id": "CU01577",
+      "recency": 114,
+      "frequency": 6,
+      "monetary": 2403.0
+    },
+    {
+      "customer_id": "CU02280",
+      "recency": 68,
+      "frequency": 3,
+      "monetary": 1133.92
+    },
+    {
+      "customer_id": "CU00821",
+      "recency": 23,
+      "frequency": 8,
+      "monetary": 5075.11
+    },
+    {
+      "customer_id": "CU02553",
+      "recency": 18,
+      "frequency": 6,
+      "monetary": 4050.48
+    },
+    {
+      "customer_id": "CU02231",
+      "recency": 173,
+      "frequency": 6,
+      "monetary": 2848.95
+    },
+    {
+      "customer_id": "CU01459",
+      "recency": 15,
+      "frequency": 8,
+      "monetary": 4134.15
+    },
+    {
+      "customer_id": "CU02788",
+      "recency": 106,
+      "frequency": 4,
+      "monetary": 1711.74
+    },
+    {
+      "customer_id": "CU01035",
+      "recency": 214,
+      "frequency": 4,
+      "monetary": 1045.08
+    },
+    {
+      "customer_id": "CU02481",
+      "recency": 9,
+      "frequency": 4,
+      "monetary": 793.29
+    },
+    {
+      "customer_id": "CU02891",
+      "recency": 21,
+      "frequency": 9,
+      "monetary": 4070.26
+    },
+    {
+      "customer_id": "CU01818",
+      "recency": 36,
+      "frequency": 6,
+      "monetary": 2819.28
+    },
+    {
+      "customer_id": "CU00478",
+      "recency": 119,
+      "frequency": 7,
+      "monetary": 3456.25
+    },
+    {
+      "customer_id": "CU01977",
+      "recency": 8,
+      "frequency": 9,
+      "monetary": 3919.77
+    },
+    {
+      "customer_id": "CU02061",
+      "recency": 70,
+      "frequency": 5,
+      "monetary": 3211.75
+    },
+    {
+      "customer_id": "CU00779",
+      "recency": 93,
+      "frequency": 5,
+      "monetary": 2654.95
+    },
+    {
+      "customer_id": "CU02888",
+      "recency": 46,
+      "frequency": 6,
+      "monetary": 2444.45
+    },
+    {
+      "customer_id": "CU02629",
+      "recency": 170,
+      "frequency": 2,
+      "monetary": 2784.83
+    },
+    {
+      "customer_id": "CU01696",
+      "recency": 60,
+      "frequency": 6,
+      "monetary": 3819.52
+    },
+    {
+      "customer_id": "CU01417",
+      "recency": 84,
+      "frequency": 3,
+      "monetary": 1748.94
+    },
+    {
+      "customer_id": "CU02037",
+      "recency": 9,
+      "frequency": 6,
+      "monetary": 1964.68
+    },
+    {
+      "customer_id": "CU00411",
+      "recency": 127,
+      "frequency": 10,
+      "monetary": 4775.44
+    },
+    {
+      "customer_id": "CU01060",
+      "recency": 33,
+      "frequency": 6,
+      "monetary": 2817.16
+    },
+    {
+      "customer_id": "CU02518",
+      "recency": 189,
+      "frequency": 1,
+      "monetary": 1473.92
+    },
+    {
+      "customer_id": "CU01945",
+      "recency": 102,
+      "frequency": 3,
+      "monetary": 1139.97
+    },
+    {
+      "customer_id": "CU02516",
+      "recency": 11,
+      "frequency": 4,
+      "monetary": 1569.48
+    },
+    {
+      "customer_id": "CU02628",
+      "recency": 95,
+      "frequency": 10,
+      "monetary": 5843.09
+    },
+    {
+      "customer_id": "CU01553",
+      "recency": 10,
+      "frequency": 4,
+      "monetary": 1362.63
+    },
+    {
+      "customer_id": "CU00614",
+      "recency": 27,
+      "frequency": 8,
+      "monetary": 3860.77
+    },
+    {
+      "customer_id": "CU02024",
+      "recency": 70,
+      "frequency": 5,
+      "monetary": 549.83
+    },
+    {
+      "customer_id": "CU02700",
+      "recency": 5,
+      "frequency": 8,
+      "monetary": 5625.35
+    },
+    {
+      "customer_id": "CU01781",
+      "recency": 4,
+      "frequency": 6,
+      "monetary": 3010.09
+    },
+    {
+      "customer_id": "CU00017",
+      "recency": 20,
+      "frequency": 3,
+      "monetary": 2648.36
+    },
+    {
+      "customer_id": "CU00720",
+      "recency": 3,
+      "frequency": 8,
+      "monetary": 3681.08
+    },
+    {
+      "customer_id": "CU02829",
+      "recency": 101,
+      "frequency": 2,
+      "monetary": 900.68
+    },
+    {
+      "customer_id": "CU00715",
+      "recency": 171,
+      "frequency": 5,
+      "monetary": 3291.12
+    },
+    {
+      "customer_id": "CU00501",
+      "recency": 3,
+      "frequency": 4,
+      "monetary": 3736.19
+    },
+    {
+      "customer_id": "CU01457",
+      "recency": 42,
+      "frequency": 9,
+      "monetary": 4662.14
+    },
+    {
+      "customer_id": "CU01165",
+      "recency": 4,
+      "frequency": 7,
+      "monetary": 3867.36
+    },
+    {
+      "customer_id": "CU02799",
+      "recency": 46,
+      "frequency": 6,
+      "monetary": 3485.47
+    },
+    {
+      "customer_id": "CU01981",
+      "recency": 9,
+      "frequency": 6,
+      "monetary": 3190.97
+    },
+    {
+      "customer_id": "CU02372",
+      "recency": 157,
+      "frequency": 8,
+      "monetary": 4990.13
+    },
+    {
+      "customer_id": "CU01721",
+      "recency": 42,
+      "frequency": 8,
+      "monetary": 5331.2
+    },
+    {
+      "customer_id": "CU01608",
+      "recency": 33,
+      "frequency": 6,
+      "monetary": 2794.9
+    },
+    {
+      "customer_id": "CU02404",
+      "recency": 16,
+      "frequency": 4,
+      "monetary": 2476.43
+    },
+    {
+      "customer_id": "CU02471",
+      "recency": 69,
+      "frequency": 5,
+      "monetary": 1457.83
+    },
+    {
+      "customer_id": "CU02639",
+      "recency": 41,
+      "frequency": 5,
+      "monetary": 999.08
+    },
+    {
+      "customer_id": "CU00504",
+      "recency": 60,
+      "frequency": 4,
+      "monetary": 2651.94
+    },
+    {
+      "customer_id": "CU01249",
+      "recency": 188,
+      "frequency": 3,
+      "monetary": 1906.07
+    },
+    {
+      "customer_id": "CU02058",
+      "recency": 43,
+      "frequency": 7,
+      "monetary": 5249.93
+    },
+    {
+      "customer_id": "CU01960",
+      "recency": 13,
+      "frequency": 3,
+      "monetary": 1207.4
+    },
+    {
+      "customer_id": "CU02883",
+      "recency": 15,
+      "frequency": 7,
+      "monetary": 4065.01
+    },
+    {
+      "customer_id": "CU01890",
+      "recency": 92,
+      "frequency": 9,
+      "monetary": 3657.13
+    },
+    {
+      "customer_id": "CU01402",
+      "recency": 95,
+      "frequency": 6,
+      "monetary": 2585.2
+    },
+    {
+      "customer_id": "CU02106",
+      "recency": 54,
+      "frequency": 3,
+      "monetary": 2978.26
+    },
+    {
+      "customer_id": "CU02782",
+      "recency": 69,
+      "frequency": 10,
+      "monetary": 6261.17
+    },
+    {
+      "customer_id": "CU00452",
+      "recency": 38,
+      "frequency": 5,
+      "monetary": 2930.66
+    },
+    {
+      "customer_id": "CU01251",
+      "recency": 19,
+      "frequency": 8,
+      "monetary": 2225.17
+    },
+    {
+      "customer_id": "CU00363",
+      "recency": 35,
+      "frequency": 5,
+      "monetary": 2844.39
+    },
+    {
+      "customer_id": "CU00395",
+      "recency": 4,
+      "frequency": 7,
+      "monetary": 5213.34
+    },
+    {
+      "customer_id": "CU02511",
+      "recency": 8,
+      "frequency": 4,
+      "monetary": 1796.14
+    },
+    {
+      "customer_id": "CU01706",
+      "recency": 37,
+      "frequency": 11,
+      "monetary": 5099.0
+    },
+    {
+      "customer_id": "CU02495",
+      "recency": 60,
+      "frequency": 4,
+      "monetary": 2654.65
+    },
+    {
+      "customer_id": "CU02843",
+      "recency": 86,
+      "frequency": 4,
+      "monetary": 2812.21
+    },
+    {
+      "customer_id": "CU00516",
+      "recency": 58,
+      "frequency": 7,
+      "monetary": 3666.97
+    },
+    {
+      "customer_id": "CU01566",
+      "recency": 16,
+      "frequency": 7,
+      "monetary": 3808.85
+    },
+    {
+      "customer_id": "CU00707",
+      "recency": 2,
+      "frequency": 4,
+      "monetary": 595.56
+    },
+    {
+      "customer_id": "CU01395",
+      "recency": 44,
+      "frequency": 6,
+      "monetary": 3887.59
+    },
+    {
+      "customer_id": "CU00935",
+      "recency": 127,
+      "frequency": 4,
+      "monetary": 2701.16
+    },
+    {
+      "customer_id": "CU01670",
+      "recency": 123,
+      "frequency": 8,
+      "monetary": 5197.11
+    },
+    {
+      "customer_id": "CU00350",
+      "recency": 9,
+      "frequency": 6,
+      "monetary": 2455.61
+    },
+    {
+      "customer_id": "CU00173",
+      "recency": 20,
+      "frequency": 3,
+      "monetary": 1673.76
+    },
+    {
+      "customer_id": "CU02469",
+      "recency": 52,
+      "frequency": 4,
+      "monetary": 1994.52
+    },
+    {
+      "customer_id": "CU00751",
+      "recency": 9,
+      "frequency": 6,
+      "monetary": 2678.85
+    },
+    {
+      "customer_id": "CU02959",
+      "recency": 28,
+      "frequency": 7,
+      "monetary": 2933.26
+    },
+    {
+      "customer_id": "CU01426",
+      "recency": 45,
+      "frequency": 8,
+      "monetary": 4675.81
+    },
+    {
+      "customer_id": "CU00569",
+      "recency": 36,
+      "frequency": 7,
+      "monetary": 2863.76
+    },
+    {
+      "customer_id": "CU01007",
+      "recency": 284,
+      "frequency": 3,
+      "monetary": 1852.26
+    },
+    {
+      "customer_id": "CU02107",
+      "recency": 54,
+      "frequency": 6,
+      "monetary": 2711.42
+    },
+    {
+      "customer_id": "CU00546",
+      "recency": 223,
+      "frequency": 3,
+      "monetary": 671.03
+    },
+    {
+      "customer_id": "CU00563",
+      "recency": 130,
+      "frequency": 5,
+      "monetary": 1739.75
+    },
+    {
+      "customer_id": "CU01942",
+      "recency": 13,
+      "frequency": 7,
+      "monetary": 2164.49
+    },
+    {
+      "customer_id": "CU01844",
+      "recency": 41,
+      "frequency": 7,
+      "monetary": 3566.44
+    },
+    {
+      "customer_id": "CU02251",
+      "recency": 32,
+      "frequency": 7,
+      "monetary": 3950.23
+    },
+    {
+      "customer_id": "CU01635",
+      "recency": 59,
+      "frequency": 4,
+      "monetary": 2525.43
+    },
+    {
+      "customer_id": "CU02896",
+      "recency": 50,
+      "frequency": 3,
+      "monetary": 342.91
+    },
+    {
+      "customer_id": "CU00659",
+      "recency": 68,
+      "frequency": 8,
+      "monetary": 4077.68
+    },
+    {
+      "customer_id": "CU01876",
+      "recency": 32,
+      "frequency": 6,
+      "monetary": 3588.73
+    },
+    {
+      "customer_id": "CU01725",
+      "recency": 98,
+      "frequency": 6,
+      "monetary": 1668.71
+    },
+    {
+      "customer_id": "CU01937",
+      "recency": 16,
+      "frequency": 7,
+      "monetary": 2754.67
+    },
+    {
+      "customer_id": "CU01882",
+      "recency": 6,
+      "frequency": 6,
+      "monetary": 2172.39
+    },
+    {
+      "customer_id": "CU02445",
+      "recency": 13,
+      "frequency": 6,
+      "monetary": 3256.16
+    },
+    {
+      "customer_id": "CU02443",
+      "recency": 97,
+      "frequency": 6,
+      "monetary": 2664.6
+    },
+    {
+      "customer_id": "CU02727",
+      "recency": 3,
+      "frequency": 8,
+      "monetary": 8206.34
+    },
+    {
+      "customer_id": "CU02307",
+      "recency": 81,
+      "frequency": 6,
+      "monetary": 3958.8
+    },
+    {
+      "customer_id": "CU01086",
+      "recency": 32,
+      "frequency": 5,
+      "monetary": 726.0
+    },
+    {
+      "customer_id": "CU01180",
+      "recency": 146,
+      "frequency": 6,
+      "monetary": 2503.91
+    },
+    {
+      "customer_id": "CU01041",
+      "recency": 15,
+      "frequency": 5,
+      "monetary": 2387.25
+    },
+    {
+      "customer_id": "CU00714",
+      "recency": 91,
+      "frequency": 5,
+      "monetary": 1820.26
+    },
+    {
+      "customer_id": "CU02422",
+      "recency": 2,
+      "frequency": 5,
+      "monetary": 4152.14
+    },
+    {
+      "customer_id": "CU02630",
+      "recency": 53,
+      "frequency": 5,
+      "monetary": 2565.56
+    },
+    {
+      "customer_id": "CU00494",
+      "recency": 45,
+      "frequency": 7,
+      "monetary": 4576.23
+    },
+    {
+      "customer_id": "CU00709",
+      "recency": 69,
+      "frequency": 4,
+      "monetary": 952.4
+    },
+    {
+      "customer_id": "CU00084",
+      "recency": 69,
+      "frequency": 4,
+      "monetary": 2263.95
+    },
+    {
+      "customer_id": "CU01051",
+      "recency": 213,
+      "frequency": 4,
+      "monetary": 4724.31
+    },
+    {
+      "customer_id": "CU02645",
+      "recency": 45,
+      "frequency": 10,
+      "monetary": 5981.53
+    },
+    {
+      "customer_id": "CU02654",
+      "recency": 13,
+      "frequency": 7,
+      "monetary": 2699.62
+    },
+    {
+      "customer_id": "CU02002",
+      "recency": 99,
+      "frequency": 7,
+      "monetary": 4805.96
+    },
+    {
+      "customer_id": "CU02638",
+      "recency": 17,
+      "frequency": 3,
+      "monetary": 1660.41
+    },
+    {
+      "customer_id": "CU02187",
+      "recency": 2,
+      "frequency": 6,
+      "monetary": 1882.98
+    },
+    {
+      "customer_id": "CU00829",
+      "recency": 48,
+      "frequency": 9,
+      "monetary": 4493.88
+    },
+    {
+      "customer_id": "CU01772",
+      "recency": 60,
+      "frequency": 6,
+      "monetary": 4385.01
+    },
+    {
+      "customer_id": "CU01020",
+      "recency": 19,
+      "frequency": 7,
+      "monetary": 3995.75
+    },
+    {
+      "customer_id": "CU00958",
+      "recency": 16,
+      "frequency": 7,
+      "monetary": 2094.15
+    },
+    {
+      "customer_id": "CU01734",
+      "recency": 1,
+      "frequency": 9,
+      "monetary": 4110.65
+    },
+    {
+      "customer_id": "CU02661",
+      "recency": 4,
+      "frequency": 6,
+      "monetary": 2351.37
+    },
+    {
+      "customer_id": "CU02234",
+      "recency": 38,
+      "frequency": 7,
+      "monetary": 4237.5
+    },
+    {
+      "customer_id": "CU01374",
+      "recency": 5,
+      "frequency": 4,
+      "monetary": 1964.82
+    },
+    {
+      "customer_id": "CU00940",
+      "recency": 1,
+      "frequency": 7,
+      "monetary": 3002.21
+    },
+    {
+      "customer_id": "CU02427",
+      "recency": 40,
+      "frequency": 5,
+      "monetary": 2292.32
+    },
+    {
+      "customer_id": "CU02414",
+      "recency": 22,
+      "frequency": 6,
+      "monetary": 1872.92
+    },
+    {
+      "customer_id": "CU02874",
+      "recency": 64,
+      "frequency": 4,
+      "monetary": 2431.3
+    },
+    {
+      "customer_id": "CU00513",
+      "recency": 3,
+      "frequency": 4,
+      "monetary": 2557.55
+    },
+    {
+      "customer_id": "CU00161",
+      "recency": 25,
+      "frequency": 7,
+      "monetary": 4175.44
+    },
+    {
+      "customer_id": "CU01291",
+      "recency": 68,
+      "frequency": 5,
+      "monetary": 3799.17
+    },
+    {
+      "customer_id": "CU00132",
+      "recency": 15,
+      "frequency": 6,
+      "monetary": 1537.49
+    },
+    {
+      "customer_id": "CU01490",
+      "recency": 12,
+      "frequency": 5,
+      "monetary": 2000.26
+    },
+    {
+      "customer_id": "CU01318",
+      "recency": 24,
+      "frequency": 6,
+      "monetary": 3623.8
+    },
+    {
+      "customer_id": "CU02859",
+      "recency": 89,
+      "frequency": 5,
+      "monetary": 1638.95
+    },
+    {
+      "customer_id": "CU02013",
+      "recency": 256,
+      "frequency": 2,
+      "monetary": 119.74
+    },
+    {
+      "customer_id": "CU00099",
+      "recency": 12,
+      "frequency": 5,
+      "monetary": 2008.99
+    },
+    {
+      "customer_id": "CU01997",
+      "recency": 15,
+      "frequency": 8,
+      "monetary": 4769.57
+    },
+    {
+      "customer_id": "CU02634",
+      "recency": 108,
+      "frequency": 3,
+      "monetary": 1219.93
+    },
+    {
+      "customer_id": "CU00797",
+      "recency": 134,
+      "frequency": 5,
+      "monetary": 1947.28
+    },
+    {
+      "customer_id": "CU02792",
+      "recency": 10,
+      "frequency": 4,
+      "monetary": 1817.91
+    },
+    {
+      "customer_id": "CU01059",
+      "recency": 11,
+      "frequency": 8,
+      "monetary": 3007.24
+    },
+    {
+      "customer_id": "CU02527",
+      "recency": 8,
+      "frequency": 6,
+      "monetary": 2933.81
+    },
+    {
+      "customer_id": "CU01143",
+      "recency": 138,
+      "frequency": 5,
+      "monetary": 2887.9
+    },
+    {
+      "customer_id": "CU01908",
+      "recency": 75,
+      "frequency": 3,
+      "monetary": 1442.48
+    },
+    {
+      "customer_id": "CU00417",
+      "recency": 99,
+      "frequency": 4,
+      "monetary": 2292.17
+    },
+    {
+      "customer_id": "CU02304",
+      "recency": 50,
+      "frequency": 6,
+      "monetary": 3122.88
+    },
+    {
+      "customer_id": "CU02277",
+      "recency": 71,
+      "frequency": 8,
+      "monetary": 6197.81
+    },
+    {
+      "customer_id": "CU00324",
+      "recency": 96,
+      "frequency": 9,
+      "monetary": 4582.59
+    },
+    {
+      "customer_id": "CU01660",
+      "recency": 43,
+      "frequency": 8,
+      "monetary": 3976.78
+    },
+    {
+      "customer_id": "CU01297",
+      "recency": 23,
+      "frequency": 6,
+      "monetary": 2215.3
+    },
+    {
+      "customer_id": "CU01057",
+      "recency": 40,
+      "frequency": 7,
+      "monetary": 2556.84
+    },
+    {
+      "customer_id": "CU02795",
+      "recency": 136,
+      "frequency": 3,
+      "monetary": 2252.4
+    },
+    {
+      "customer_id": "CU01640",
+      "recency": 35,
+      "frequency": 6,
+      "monetary": 2551.43
+    },
+    {
+      "customer_id": "CU02286",
+      "recency": 29,
+      "frequency": 9,
+      "monetary": 2760.39
+    },
+    {
+      "customer_id": "CU01099",
+      "recency": 18,
+      "frequency": 6,
+      "monetary": 3401.53
+    },
+    {
+      "customer_id": "CU01248",
+      "recency": 174,
+      "frequency": 3,
+      "monetary": 1934.97
+    },
+    {
+      "customer_id": "CU00327",
+      "recency": 38,
+      "frequency": 7,
+      "monetary": 3774.56
+    },
+    {
+      "customer_id": "CU01736",
+      "recency": 69,
+      "frequency": 2,
+      "monetary": 447.93
+    },
+    {
+      "customer_id": "CU02205",
+      "recency": 65,
+      "frequency": 2,
+      "monetary": 427.74
+    },
+    {
+      "customer_id": "CU00931",
+      "recency": 5,
+      "frequency": 6,
+      "monetary": 2903.09
+    },
+    {
+      "customer_id": "CU01303",
+      "recency": 24,
+      "frequency": 13,
+      "monetary": 6528.64
+    },
+    {
+      "customer_id": "CU00591",
+      "recency": 99,
+      "frequency": 2,
+      "monetary": 992.6
+    },
+    {
+      "customer_id": "CU00081",
+      "recency": 121,
+      "frequency": 5,
+      "monetary": 3161.42
+    },
+    {
+      "customer_id": "CU00220",
+      "recency": 135,
+      "frequency": 6,
+      "monetary": 3930.38
+    },
+    {
+      "customer_id": "CU01337",
+      "recency": 15,
+      "frequency": 4,
+      "monetary": 771.25
+    },
+    {
+      "customer_id": "CU01341",
+      "recency": 52,
+      "frequency": 4,
+      "monetary": 2105.81
+    },
+    {
+      "customer_id": "CU00052",
+      "recency": 38,
+      "frequency": 7,
+      "monetary": 4772.86
+    },
+    {
+      "customer_id": "CU02928",
+      "recency": 2,
+      "frequency": 7,
+      "monetary": 4213.36
+    },
+    {
+      "customer_id": "CU02946",
+      "recency": 4,
+      "frequency": 7,
+      "monetary": 4975.82
+    },
+    {
+      "customer_id": "CU00180",
+      "recency": 19,
+      "frequency": 7,
+      "monetary": 2471.21
+    },
+    {
+      "customer_id": "CU02390",
+      "recency": 39,
+      "frequency": 7,
+      "monetary": 4073.88
+    },
+    {
+      "customer_id": "CU02721",
+      "recency": 88,
+      "frequency": 6,
+      "monetary": 1997.46
+    },
+    {
+      "customer_id": "CU00853",
+      "recency": 85,
+      "frequency": 6,
+      "monetary": 2713.81
+    },
+    {
+      "customer_id": "CU00414",
+      "recency": 197,
+      "frequency": 4,
+      "monetary": 3520.07
+    },
+    {
+      "customer_id": "CU02777",
+      "recency": 8,
+      "frequency": 5,
+      "monetary": 2261.14
+    },
+    {
+      "customer_id": "CU02984",
+      "recency": 157,
+      "frequency": 3,
+      "monetary": 1003.88
+    },
+    {
+      "customer_id": "CU01506",
+      "recency": 257,
+      "frequency": 3,
+      "monetary": 2156.49
+    },
+    {
+      "customer_id": "CU02000",
+      "recency": 37,
+      "frequency": 4,
+      "monetary": 1473.26
+    },
+    {
+      "customer_id": "CU01681",
+      "recency": 100,
+      "frequency": 6,
+      "monetary": 3292.86
+    },
+    {
+      "customer_id": "CU02730",
+      "recency": 78,
+      "frequency": 7,
+      "monetary": 3597.26
+    },
+    {
+      "customer_id": "CU00929",
+      "recency": 159,
+      "frequency": 5,
+      "monetary": 2135.48
+    },
+    {
+      "customer_id": "CU02297",
+      "recency": 33,
+      "frequency": 8,
+      "monetary": 5058.85
+    },
+    {
+      "customer_id": "CU00525",
+      "recency": 13,
+      "frequency": 6,
+      "monetary": 1846.45
+    },
+    {
+      "customer_id": "CU00329",
+      "recency": 27,
+      "frequency": 3,
+      "monetary": 377.0
+    },
+    {
+      "customer_id": "CU00761",
+      "recency": 23,
+      "frequency": 10,
+      "monetary": 4238.77
+    },
+    {
+      "customer_id": "CU02858",
+      "recency": 63,
+      "frequency": 3,
+      "monetary": 1473.74
+    },
+    {
+      "customer_id": "CU00964",
+      "recency": 2,
+      "frequency": 6,
+      "monetary": 4401.33
+    },
+    {
+      "customer_id": "CU00531",
+      "recency": 11,
+      "frequency": 7,
+      "monetary": 3058.63
+    },
+    {
+      "customer_id": "CU01528",
+      "recency": 75,
+      "frequency": 5,
+      "monetary": 1709.76
+    },
+    {
+      "customer_id": "CU02831",
+      "recency": 49,
+      "frequency": 5,
+      "monetary": 3743.61
+    },
+    {
+      "customer_id": "CU00995",
+      "recency": 31,
+      "frequency": 10,
+      "monetary": 5197.26
+    },
+    {
+      "customer_id": "CU00185",
+      "recency": 34,
+      "frequency": 7,
+      "monetary": 3816.27
+    },
+    {
+      "customer_id": "CU00662",
+      "recency": 125,
+      "frequency": 5,
+      "monetary": 1111.44
+    },
+    {
+      "customer_id": "CU01150",
+      "recency": 19,
+      "frequency": 8,
+      "monetary": 3732.36
+    },
+    {
+      "customer_id": "CU01585",
+      "recency": 5,
+      "frequency": 9,
+      "monetary": 4983.79
+    },
+    {
+      "customer_id": "CU02036",
+      "recency": 187,
+      "frequency": 3,
+      "monetary": 863.9
+    },
+    {
+      "customer_id": "CU00012",
+      "recency": 109,
+      "frequency": 10,
+      "monetary": 4837.63
+    },
+    {
+      "customer_id": "CU01535",
+      "recency": 39,
+      "frequency": 5,
+      "monetary": 4196.61
+    },
+    {
+      "customer_id": "CU00819",
+      "recency": 297,
+      "frequency": 2,
+      "monetary": 656.34
+    },
+    {
+      "customer_id": "CU02650",
+      "recency": 155,
+      "frequency": 7,
+      "monetary": 5565.02
+    },
+    {
+      "customer_id": "CU01315",
+      "recency": 103,
+      "frequency": 6,
+      "monetary": 3092.04
+    },
+    {
+      "customer_id": "CU01324",
+      "recency": 96,
+      "frequency": 8,
+      "monetary": 6031.87
+    },
+    {
+      "customer_id": "CU02693",
+      "recency": 54,
+      "frequency": 11,
+      "monetary": 6399.02
+    },
+    {
+      "customer_id": "CU00360",
+      "recency": 101,
+      "frequency": 3,
+      "monetary": 548.26
+    },
+    {
+      "customer_id": "CU01110",
+      "recency": 117,
+      "frequency": 2,
+      "monetary": 787.73
+    },
+    {
+      "customer_id": "CU01207",
+      "recency": 5,
+      "frequency": 4,
+      "monetary": 2716.47
+    },
+    {
+      "customer_id": "CU02763",
+      "recency": 31,
+      "frequency": 6,
+      "monetary": 2200.95
+    },
+    {
+      "customer_id": "CU02555",
+      "recency": 155,
+      "frequency": 4,
+      "monetary": 1218.31
+    },
+    {
+      "customer_id": "CU01674",
+      "recency": 59,
+      "frequency": 8,
+      "monetary": 2063.05
+    },
+    {
+      "customer_id": "CU00487",
+      "recency": 2,
+      "frequency": 6,
+      "monetary": 3571.84
+    },
+    {
+      "customer_id": "CU02886",
+      "recency": 33,
+      "frequency": 8,
+      "monetary": 4243.69
+    },
+    {
+      "customer_id": "CU00549",
+      "recency": 140,
+      "frequency": 3,
+      "monetary": 853.65
+    },
+    {
+      "customer_id": "CU01894",
+      "recency": 67,
+      "frequency": 6,
+      "monetary": 2817.96
+    },
+    {
+      "customer_id": "CU01333",
+      "recency": 54,
+      "frequency": 7,
+      "monetary": 3103.44
+    },
+    {
+      "customer_id": "CU00580",
+      "recency": 27,
+      "frequency": 9,
+      "monetary": 4328.67
+    },
+    {
+      "customer_id": "CU00244",
+      "recency": 31,
+      "frequency": 8,
+      "monetary": 2916.38
+    },
+    {
+      "customer_id": "CU02574",
+      "recency": 99,
+      "frequency": 2,
+      "monetary": 278.52
+    },
+    {
+      "customer_id": "CU02190",
+      "recency": 7,
+      "frequency": 7,
+      "monetary": 4695.71
+    },
+    {
+      "customer_id": "CU01737",
+      "recency": 98,
+      "frequency": 5,
+      "monetary": 2694.58
+    },
+    {
+      "customer_id": "CU00274",
+      "recency": -1,
+      "frequency": 6,
+      "monetary": 4343.4
+    },
+    {
+      "customer_id": "CU02680",
+      "recency": 30,
+      "frequency": 7,
+      "monetary": 2964.63
+    },
+    {
+      "customer_id": "CU00235",
+      "recency": 6,
+      "frequency": 5,
+      "monetary": 3138.75
+    },
+    {
+      "customer_id": "CU01627",
+      "recency": 119,
+      "frequency": 3,
+      "monetary": 1276.55
+    },
+    {
+      "customer_id": "CU00790",
+      "recency": 81,
+      "frequency": 5,
+      "monetary": 1676.06
+    },
+    {
+      "customer_id": "CU00228",
+      "recency": 56,
+      "frequency": 9,
+      "monetary": 1797.95
+    },
+    {
+      "customer_id": "CU02018",
+      "recency": 24,
+      "frequency": 6,
+      "monetary": 3070.75
+    },
+    {
+      "customer_id": "CU00424",
+      "recency": 46,
+      "frequency": 5,
+      "monetary": 2581.73
+    },
+    {
+      "customer_id": "CU00612",
+      "recency": 124,
+      "frequency": 6,
+      "monetary": 2670.78
+    },
+    {
+      "customer_id": "CU00651",
+      "recency": 15,
+      "frequency": 4,
+      "monetary": 1133.46
+    },
+    {
+      "customer_id": "CU01881",
+      "recency": 354,
+      "frequency": 1,
+      "monetary": 358.22
+    },
+    {
+      "customer_id": "CU01857",
+      "recency": 41,
+      "frequency": 6,
+      "monetary": 3357.55
+    },
+    {
+      "customer_id": "CU01961",
+      "recency": 125,
+      "frequency": 3,
+      "monetary": 683.63
+    },
+    {
+      "customer_id": "CU02592",
+      "recency": 26,
+      "frequency": 5,
+      "monetary": 2106.85
+    },
+    {
+      "customer_id": "CU02615",
+      "recency": 39,
+      "frequency": 7,
+      "monetary": 3651.93
+    },
+    {
+      "customer_id": "CU00269",
+      "recency": 116,
+      "frequency": 6,
+      "monetary": 4075.32
+    },
+    {
+      "customer_id": "CU02532",
+      "recency": 35,
+      "frequency": 5,
+      "monetary": 3156.94
+    },
+    {
+      "customer_id": "CU02341",
+      "recency": 24,
+      "frequency": 3,
+      "monetary": 2411.13
+    },
+    {
+      "customer_id": "CU02442",
+      "recency": 116,
+      "frequency": 6,
+      "monetary": 2302.39
+    },
+    {
+      "customer_id": "CU02789",
+      "recency": 2,
+      "frequency": 6,
+      "monetary": 2860.75
+    },
+    {
+      "customer_id": "CU00131",
+      "recency": 105,
+      "frequency": 6,
+      "monetary": 2104.88
+    },
+    {
+      "customer_id": "CU00434",
+      "recency": 168,
+      "frequency": 2,
+      "monetary": 1621.14
+    },
+    {
+      "customer_id": "CU01769",
+      "recency": 14,
+      "frequency": 7,
+      "monetary": 3628.21
+    },
+    {
+      "customer_id": "CU02785",
+      "recency": 140,
+      "frequency": 4,
+      "monetary": 2045.83
+    },
+    {
+      "customer_id": "CU01938",
+      "recency": 75,
+      "frequency": 8,
+      "monetary": 4679.95
+    },
+    {
+      "customer_id": "CU02377",
+      "recency": 3,
+      "frequency": 10,
+      "monetary": 4227.07
+    },
+    {
+      "customer_id": "CU00953",
+      "recency": 5,
+      "frequency": 6,
+      "monetary": 3731.66
+    },
+    {
+      "customer_id": "CU00698",
+      "recency": 17,
+      "frequency": 4,
+      "monetary": 1219.41
+    },
+    {
+      "customer_id": "CU00496",
+      "recency": 53,
+      "frequency": 3,
+      "monetary": 1758.2
+    },
+    {
+      "customer_id": "CU01747",
+      "recency": 87,
+      "frequency": 6,
+      "monetary": 3451.95
+    },
+    {
+      "customer_id": "CU02569",
+      "recency": 6,
+      "frequency": 5,
+      "monetary": 3586.74
+    },
+    {
+      "customer_id": "CU00275",
+      "recency": 64,
+      "frequency": 3,
+      "monetary": 1795.43
+    },
+    {
+      "customer_id": "CU01827",
+      "recency": 33,
+      "frequency": 5,
+      "monetary": 1328.72
+    },
+    {
+      "customer_id": "CU01321",
+      "recency": 76,
+      "frequency": 5,
+      "monetary": 3028.78
+    },
+    {
+      "customer_id": "CU00667",
+      "recency": 69,
+      "frequency": 4,
+      "monetary": 1533.91
+    },
+    {
+      "customer_id": "CU01071",
+      "recency": 257,
+      "frequency": 3,
+      "monetary": 2104.95
+    },
+    {
+      "customer_id": "CU00454",
+      "recency": 53,
+      "frequency": 4,
+      "monetary": 1513.63
+    },
+    {
+      "customer_id": "CU02453",
+      "recency": 11,
+      "frequency": 5,
+      "monetary": 3344.42
+    },
+    {
+      "customer_id": "CU02864",
+      "recency": 174,
+      "frequency": 2,
+      "monetary": 2294.65
+    },
+    {
+      "customer_id": "CU00759",
+      "recency": 50,
+      "frequency": 5,
+      "monetary": 2639.38
+    },
+    {
+      "customer_id": "CU01446",
+      "recency": 262,
+      "frequency": 2,
+      "monetary": 1213.78
+    },
+    {
+      "customer_id": "CU02502",
+      "recency": 224,
+      "frequency": 2,
+      "monetary": 857.15
+    },
+    {
+      "customer_id": "CU02010",
+      "recency": 87,
+      "frequency": 2,
+      "monetary": 676.79
+    },
+    {
+      "customer_id": "CU01693",
+      "recency": 4,
+      "frequency": 4,
+      "monetary": 2113.01
+    },
+    {
+      "customer_id": "CU01581",
+      "recency": 66,
+      "frequency": 4,
+      "monetary": 2982.13
+    },
+    {
+      "customer_id": "CU01948",
+      "recency": 26,
+      "frequency": 6,
+      "monetary": 2557.76
+    },
+    {
+      "customer_id": "CU00216",
+      "recency": 185,
+      "frequency": 5,
+      "monetary": 1662.14
+    },
+    {
+      "customer_id": "CU02022",
+      "recency": 35,
+      "frequency": 2,
+      "monetary": 939.23
+    },
+    {
+      "customer_id": "CU01329",
+      "recency": 67,
+      "frequency": 5,
+      "monetary": 2546.07
+    },
+    {
+      "customer_id": "CU00721",
+      "recency": 45,
+      "frequency": 5,
+      "monetary": 3187.49
+    },
+    {
+      "customer_id": "CU01716",
+      "recency": 13,
+      "frequency": 8,
+      "monetary": 5687.51
+    },
+    {
+      "customer_id": "CU00555",
+      "recency": 42,
+      "frequency": 4,
+      "monetary": 1985.76
+    },
+    {
+      "customer_id": "CU01680",
+      "recency": 27,
+      "frequency": 2,
+      "monetary": 1420.3
+    },
+    {
+      "customer_id": "CU02990",
+      "recency": 127,
+      "frequency": 2,
+      "monetary": 791.92
+    },
+    {
+      "customer_id": "CU00843",
+      "recency": 42,
+      "frequency": 5,
+      "monetary": 1831.02
+    },
+    {
+      "customer_id": "CU00682",
+      "recency": 88,
+      "frequency": 6,
+      "monetary": 2717.05
+    },
+    {
+      "customer_id": "CU00133",
+      "recency": 160,
+      "frequency": 4,
+      "monetary": 1445.24
+    },
+    {
+      "customer_id": "CU02604",
+      "recency": 64,
+      "frequency": 5,
+      "monetary": 3722.92
+    },
+    {
+      "customer_id": "CU00294",
+      "recency": 33,
+      "frequency": 5,
+      "monetary": 3929.48
+    },
+    {
+      "customer_id": "CU02153",
+      "recency": 15,
+      "frequency": 5,
+      "monetary": 3028.01
+    },
+    {
+      "customer_id": "CU02898",
+      "recency": 139,
+      "frequency": 3,
+      "monetary": 1616.49
+    },
+    {
+      "customer_id": "CU01273",
+      "recency": 27,
+      "frequency": 1,
+      "monetary": 751.97
+    },
+    {
+      "customer_id": "CU01250",
+      "recency": 52,
+      "frequency": 7,
+      "monetary": 3595.12
+    },
+    {
+      "customer_id": "CU01687",
+      "recency": 139,
+      "frequency": 5,
+      "monetary": 2421.72
+    },
+    {
+      "customer_id": "CU01436",
+      "recency": 44,
+      "frequency": 5,
+      "monetary": 842.8
+    },
+    {
+      "customer_id": "CU00181",
+      "recency": 13,
+      "frequency": 8,
+      "monetary": 2763.3
+    },
+    {
+      "customer_id": "CU01622",
+      "recency": 81,
+      "frequency": 5,
+      "monetary": 3519.36
+    },
+    {
+      "customer_id": "CU00459",
+      "recency": 30,
+      "frequency": 6,
+      "monetary": 2173.94
+    },
+    {
+      "customer_id": "CU02122",
+      "recency": 45,
+      "frequency": 6,
+      "monetary": 2986.71
+    },
+    {
+      "customer_id": "CU01452",
+      "recency": 72,
+      "frequency": 8,
+      "monetary": 2763.01
+    },
+    {
+      "customer_id": "CU01487",
+      "recency": 77,
+      "frequency": 5,
+      "monetary": 2627.36
+    },
+    {
+      "customer_id": "CU02575",
+      "recency": 68,
+      "frequency": 9,
+      "monetary": 5743.1
+    },
+    {
+      "customer_id": "CU02802",
+      "recency": 93,
+      "frequency": 7,
+      "monetary": 3689.16
+    },
+    {
+      "customer_id": "CU01745",
+      "recency": 61,
+      "frequency": 3,
+      "monetary": 1517.47
+    },
+    {
+      "customer_id": "CU00435",
+      "recency": 9,
+      "frequency": 4,
+      "monetary": 1865.73
+    },
+    {
+      "customer_id": "CU00024",
+      "recency": 29,
+      "frequency": 11,
+      "monetary": 6525.5
+    },
+    {
+      "customer_id": "CU02695",
+      "recency": 14,
+      "frequency": 8,
+      "monetary": 2135.63
+    },
+    {
+      "customer_id": "CU01349",
+      "recency": 45,
+      "frequency": 5,
+      "monetary": 2943.88
+    },
+    {
+      "customer_id": "CU00401",
+      "recency": 10,
+      "frequency": 8,
+      "monetary": 3980.25
+    },
+    {
+      "customer_id": "CU02176",
+      "recency": 5,
+      "frequency": 11,
+      "monetary": 6641.87
+    },
+    {
+      "customer_id": "CU02066",
+      "recency": 14,
+      "frequency": 8,
+      "monetary": 4075.59
+    },
+    {
+      "customer_id": "CU01117",
+      "recency": 57,
+      "frequency": 5,
+      "monetary": 3649.98
+    },
+    {
+      "customer_id": "CU01299",
+      "recency": 0,
+      "frequency": 6,
+      "monetary": 2213.16
+    },
+    {
+      "customer_id": "CU02529",
+      "recency": 26,
+      "frequency": 6,
+      "monetary": 4940.46
+    },
+    {
+      "customer_id": "CU01397",
+      "recency": 198,
+      "frequency": 5,
+      "monetary": 1409.66
+    },
+    {
+      "customer_id": "CU01097",
+      "recency": 20,
+      "frequency": 3,
+      "monetary": 1630.61
+    },
+    {
+      "customer_id": "CU00765",
+      "recency": 20,
+      "frequency": 8,
+      "monetary": 6427.13
+    },
+    {
+      "customer_id": "CU01967",
+      "recency": 71,
+      "frequency": 8,
+      "monetary": 4978.03
+    },
+    {
+      "customer_id": "CU02395",
+      "recency": 50,
+      "frequency": 11,
+      "monetary": 7659.68
+    },
+    {
+      "customer_id": "CU02148",
+      "recency": 18,
+      "frequency": 7,
+      "monetary": 2222.62
+    },
+    {
+      "customer_id": "CU00441",
+      "recency": 173,
+      "frequency": 6,
+      "monetary": 3643.26
+    },
+    {
+      "customer_id": "CU02980",
+      "recency": 34,
+      "frequency": 8,
+      "monetary": 3651.43
+    },
+    {
+      "customer_id": "CU02279",
+      "recency": 218,
+      "frequency": 4,
+      "monetary": 2625.98
+    },
+    {
+      "customer_id": "CU00463",
+      "recency": 2,
+      "frequency": 5,
+      "monetary": 4280.57
+    },
+    {
+      "customer_id": "CU01920",
+      "recency": 145,
+      "frequency": 4,
+      "monetary": 1980.72
+    },
+    {
+      "customer_id": "CU00596",
+      "recency": 250,
+      "frequency": 2,
+      "monetary": 697.66
+    },
+    {
+      "customer_id": "CU02725",
+      "recency": 18,
+      "frequency": 5,
+      "monetary": 3917.09
+    },
+    {
+      "customer_id": "CU02049",
+      "recency": 43,
+      "frequency": 5,
+      "monetary": 1815.19
+    },
+    {
+      "customer_id": "CU01283",
+      "recency": 130,
+      "frequency": 5,
+      "monetary": 3380.7
+    },
+    {
+      "customer_id": "CU02573",
+      "recency": 13,
+      "frequency": 5,
+      "monetary": 2029.71
+    },
+    {
+      "customer_id": "CU00365",
+      "recency": 44,
+      "frequency": 3,
+      "monetary": 1262.41
+    },
+    {
+      "customer_id": "CU00989",
+      "recency": 16,
+      "frequency": 3,
+      "monetary": 302.63
+    },
+    {
+      "customer_id": "CU02359",
+      "recency": 80,
+      "frequency": 7,
+      "monetary": 3062.14
+    },
+    {
+      "customer_id": "CU00912",
+      "recency": 22,
+      "frequency": 8,
+      "monetary": 3570.6
+    },
+    {
+      "customer_id": "CU01038",
+      "recency": 16,
+      "frequency": 4,
+      "monetary": 940.98
+    },
+    {
+      "customer_id": "CU02077",
+      "recency": 143,
+      "frequency": 3,
+      "monetary": 1931.87
+    },
+    {
+      "customer_id": "CU00621",
+      "recency": 58,
+      "frequency": 4,
+      "monetary": 1638.21
+    },
+    {
+      "customer_id": "CU00869",
+      "recency": 105,
+      "frequency": 4,
+      "monetary": 1805.57
+    },
+    {
+      "customer_id": "CU02892",
+      "recency": 183,
+      "frequency": 3,
+      "monetary": 774.74
+    },
+    {
+      "customer_id": "CU00898",
+      "recency": 112,
+      "frequency": 4,
+      "monetary": 1686.37
+    },
+    {
+      "customer_id": "CU01385",
+      "recency": 44,
+      "frequency": 4,
+      "monetary": 2169.36
+    },
+    {
+      "customer_id": "CU02881",
+      "recency": 99,
+      "frequency": 5,
+      "monetary": 3799.56
+    },
+    {
+      "customer_id": "CU01269",
+      "recency": 9,
+      "frequency": 1,
+      "monetary": 260.66
+    },
+    {
+      "customer_id": "CU02389",
+      "recency": 4,
+      "frequency": 9,
+      "monetary": 4872.0
+    },
+    {
+      "customer_id": "CU02189",
+      "recency": 7,
+      "frequency": 7,
+      "monetary": 2896.64
+    },
+    {
+      "customer_id": "CU02226",
+      "recency": 66,
+      "frequency": 6,
+      "monetary": 2857.84
+    },
+    {
+      "customer_id": "CU01595",
+      "recency": 56,
+      "frequency": 8,
+      "monetary": 3971.31
+    },
+    {
+      "customer_id": "CU02987",
+      "recency": 55,
+      "frequency": 7,
+      "monetary": 2955.22
+    },
+    {
+      "customer_id": "CU00505",
+      "recency": 56,
+      "frequency": 6,
+      "monetary": 2311.08
+    },
+    {
+      "customer_id": "CU00774",
+      "recency": 69,
+      "frequency": 2,
+      "monetary": 1263.57
+    },
+    {
+      "customer_id": "CU02224",
+      "recency": 75,
+      "frequency": 8,
+      "monetary": 4056.59
+    },
+    {
+      "customer_id": "CU01239",
+      "recency": 97,
+      "frequency": 8,
+      "monetary": 4932.88
+    },
+    {
+      "customer_id": "CU02965",
+      "recency": 90,
+      "frequency": 5,
+      "monetary": 3340.61
+    },
+    {
+      "customer_id": "CU02160",
+      "recency": 144,
+      "frequency": 1,
+      "monetary": 299.46
+    },
+    {
+      "customer_id": "CU00178",
+      "recency": 28,
+      "frequency": 7,
+      "monetary": 5099.48
+    },
+    {
+      "customer_id": "CU01733",
+      "recency": 42,
+      "frequency": 5,
+      "monetary": 3525.17
+    },
+    {
+      "customer_id": "CU02273",
+      "recency": 70,
+      "frequency": 2,
+      "monetary": 311.67
+    },
+    {
+      "customer_id": "CU00604",
+      "recency": 88,
+      "frequency": 4,
+      "monetary": 2624.74
+    },
+    {
+      "customer_id": "CU02082",
+      "recency": 9,
+      "frequency": 7,
+      "monetary": 4688.01
+    },
+    {
+      "customer_id": "CU02102",
+      "recency": 23,
+      "frequency": 7,
+      "monetary": 2703.69
+    },
+    {
+      "customer_id": "CU02546",
+      "recency": 80,
+      "frequency": 3,
+      "monetary": 1751.96
+    },
+    {
+      "customer_id": "CU02983",
+      "recency": 42,
+      "frequency": 6,
+      "monetary": 2652.34
+    },
+    {
+      "customer_id": "CU02702",
+      "recency": 86,
+      "frequency": 5,
+      "monetary": 5702.58
+    },
+    {
+      "customer_id": "CU01495",
+      "recency": 16,
+      "frequency": 9,
+      "monetary": 3009.82
+    },
+    {
+      "customer_id": "CU00004",
+      "recency": 12,
+      "frequency": 10,
+      "monetary": 5765.41
+    },
+    {
+      "customer_id": "CU01375",
+      "recency": 1,
+      "frequency": 3,
+      "monetary": 1051.07
+    },
+    {
+      "customer_id": "CU02598",
+      "recency": 18,
+      "frequency": 7,
+      "monetary": 5686.78
+    },
+    {
+      "customer_id": "CU00297",
+      "recency": 35,
+      "frequency": 6,
+      "monetary": 5166.5
+    },
+    {
+      "customer_id": "CU01610",
+      "recency": 102,
+      "frequency": 4,
+      "monetary": 1247.6
+    },
+    {
+      "customer_id": "CU00418",
+      "recency": 2,
+      "frequency": 10,
+      "monetary": 5710.59
+    },
+    {
+      "customer_id": "CU00968",
+      "recency": 73,
+      "frequency": 6,
+      "monetary": 1299.79
+    },
+    {
+      "customer_id": "CU02497",
+      "recency": 1,
+      "frequency": 9,
+      "monetary": 4723.0
+    },
+    {
+      "customer_id": "CU00163",
+      "recency": 3,
+      "frequency": 6,
+      "monetary": 3083.15
+    },
+    {
+      "customer_id": "CU02248",
+      "recency": 39,
+      "frequency": 5,
+      "monetary": 1357.6
+    },
+    {
+      "customer_id": "CU00802",
+      "recency": 24,
+      "frequency": 8,
+      "monetary": 2372.47
+    },
+    {
+      "customer_id": "CU01438",
+      "recency": 24,
+      "frequency": 9,
+      "monetary": 6732.39
+    },
+    {
+      "customer_id": "CU01574",
+      "recency": 38,
+      "frequency": 6,
+      "monetary": 2514.89
+    },
+    {
+      "customer_id": "CU00042",
+      "recency": 37,
+      "frequency": 7,
+      "monetary": 4850.83
+    },
+    {
+      "customer_id": "CU00944",
+      "recency": 110,
+      "frequency": 2,
+      "monetary": 1825.79
+    },
+    {
+      "customer_id": "CU00547",
+      "recency": 4,
+      "frequency": 8,
+      "monetary": 4531.27
+    },
+    {
+      "customer_id": "CU02491",
+      "recency": 116,
+      "frequency": 3,
+      "monetary": 1024.23
+    },
+    {
+      "customer_id": "CU00885",
+      "recency": 93,
+      "frequency": 4,
+      "monetary": 2375.2
+    },
+    {
+      "customer_id": "CU00629",
+      "recency": 143,
+      "frequency": 3,
+      "monetary": 2283.65
+    },
+    {
+      "customer_id": "CU00214",
+      "recency": 141,
+      "frequency": 2,
+      "monetary": 322.46
+    },
+    {
+      "customer_id": "CU01915",
+      "recency": 206,
+      "frequency": 5,
+      "monetary": 2741.24
+    },
+    {
+      "customer_id": "CU01016",
+      "recency": 164,
+      "frequency": 5,
+      "monetary": 1749.17
+    },
+    {
+      "customer_id": "CU02717",
+      "recency": 27,
+      "frequency": 3,
+      "monetary": 863.57
+    }
+  ]
+}
